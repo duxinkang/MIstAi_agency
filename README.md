@@ -13,18 +13,44 @@
 
 ```
 startpoint/
-├── app/
-│   ├── blog/              # 博客相关页面
-│   │   ├── [slug]/       # 动态博客文章页面
-│   │   └── page.tsx      # 博客首页
-│   ├── layout.tsx        # 根布局
-│   └── page.tsx          # 首页
-├── lib/
-│   ├── blog-data.ts      # 博客文章数据
-│   └── types/            # TypeScript 类型定义
-└── data/
-    └── blog/
-        └── data/         # Markdown 格式的博客文章源文件
+├── app/                      # 应用主要页面
+│   ├── blog/                # 博客相关页面
+│   │   ├── [slug]/         # 动态博客文章页面
+│   │   ├── layout.tsx      # 博客布局
+│   │   └── page.tsx        # 博客首页
+│   ├── viperVC/            # viperVC页面
+│   ├── layout.tsx          # 根布局
+│   └── page.tsx            # 首页
+├── components/              # 可复用组件
+│   ├── layout/             # 布局组件
+│   │   ├── footer.tsx      # 页脚
+│   │   └── header.tsx      # 头部
+│   ├── sections/           # 页面区块组件
+│   │   ├── advantages.tsx  # 优势部分
+│   │   ├── client-case.tsx # 客户案例
+│   │   ├── comparison.tsx  # 对比部分
+│   │   ├── cta.tsx         # 行动号召
+│   │   ├── engine.tsx      # 引擎部分
+│   │   ├── faq.tsx         # 常见问题
+│   │   ├── hero.tsx        # 英雄区
+│   │   ├── pricing.tsx     # 价格部分
+│   │   ├── problems.tsx    # 问题部分
+│   │   ├── promise.tsx     # 承诺部分
+│   │   └── team.tsx        # 团队部分
+│   └── ui/                 # UI组件
+│       └── button.tsx      # 按钮组件
+├── hooks/                   # 自定义钩子
+│   └── use-scroll-animation.ts # 滚动动画钩子
+├── lib/                     # 工具库和数据
+│   ├── blog-data.ts        # 博客文章数据
+│   ├── types/              # TypeScript 类型定义
+│   │   └── blog.types.ts   # 博客相关类型
+│   └── utils.ts            # 通用工具函数
+├── data/                    # 数据文件
+│   └── blog/
+│       └── data/           # Markdown 格式的博客文章源文件
+├── next.config.ts           # Next.js 配置
+└── package.json             # 项目依赖和脚本
 ```
 
 ## Getting Started
