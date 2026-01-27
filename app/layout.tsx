@@ -1,7 +1,9 @@
 import React from "react"
 import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/next'
+import { Header } from '@/components/layout/header'
 import './globals.css'
+
 
 export const metadata: Metadata = {
   title: '起始点 StartPoint | AI Agent 的 0→1 增长合伙人',
@@ -34,9 +36,11 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <body className={`font-sans antialiased`}>
+        <Header />
         {children}
         <Analytics />
       </body>
     </html>
   )
+
 }
