@@ -14,6 +14,7 @@ const navItems = [
   { label: "团队", href: "#team" },
   { label: "价格", href: "#pricing" },
   { label: "增长", href: "/growth" },
+  { label: "指南", href: "/playbooks" },
   { label: "博客", href: "/blog" },
   { label: "毒舌Agent", href: "/viperVC" },
 ];
