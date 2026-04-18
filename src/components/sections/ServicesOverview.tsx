@@ -6,11 +6,6 @@ import { Container, Section } from "@/components/ui/Container";
 import { Link } from "@/i18n/navigation";
 import { Logo } from "@/components/brand/Logo";
 
-/**
- * P4 — 业务覆盖 (Services Overview)
- * Full orange background, huge "业务覆盖" title, center "市场策略" hub,
- * 6 black capsule nodes arranged 3-left / 3-right with arrows.
- */
 export function ServicesOverview() {
   const t = useTranslations("services");
   const items = t.raw("items") as { slug: string; title: string }[];
@@ -20,6 +15,16 @@ export function ServicesOverview() {
 
   return (
     <Section bg="orange" className="!py-24 md:!py-32">
+      {/* Neon mesh background */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(ellipse 60% 80% at 50% 50%, rgba(0,230,118,0.05) 0%, transparent 70%)",
+        }}
+      />
+
       <Container size="full">
         <div className="absolute top-8 left-1/2 -translate-x-1/2 opacity-90">
           <Logo variant="dark" size="sm" />
@@ -31,7 +36,7 @@ export function ServicesOverview() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="sp-display text-[14vw] sm:text-[10vw] lg:text-[7vw] xl:text-[120px] leading-[0.9] text-ink"
+            className="sp-display text-[14vw] sm:text-[10vw] lg:text-[7vw] xl:text-[120px] leading-[0.9] text-[#E8F0FF]"
           >
             {t("title")}
           </motion.h2>
@@ -43,7 +48,7 @@ export function ServicesOverview() {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="lg:pt-8"
           >
-            <p className="text-lg md:text-xl text-ink/90 leading-relaxed max-w-md">
+            <p className="text-lg md:text-xl text-white/75 leading-relaxed max-w-md">
               {t("description")}
             </p>
           </motion.div>
@@ -62,13 +67,16 @@ export function ServicesOverview() {
             ))}
           </div>
 
-          {/* Center hub */}
+          {/* Center hub — neon gradient */}
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="bg-ink rounded-full flex items-center justify-center text-white font-bold text-xl md:text-2xl w-40 h-40 md:w-56 md:h-56 mx-auto my-8 md:my-0 shadow-xl"
+            className="rounded-full flex items-center justify-center text-[#030810] font-bold text-xl md:text-2xl w-40 h-40 md:w-56 md:h-56 mx-auto my-8 md:my-0 shadow-[0_0_60px_rgba(0,230,118,0.3)]"
+            style={{
+              background: "linear-gradient(135deg, #00E676 0%, #2979FF 100%)",
+            }}
           >
             {t("center")}
           </motion.div>
@@ -105,7 +113,7 @@ function ServiceNode({
         className="group flex-1"
       >
         <div
-          className={`bg-ink text-white rounded-full px-8 py-5 font-bold text-base md:text-lg tracking-wide transition-all group-hover:bg-white group-hover:text-orange-500 shadow-lg ${align === "left" ? "text-left" : "text-right"}`}
+          className={`bg-[#0D1830] border border-white/12 text-white rounded-full px-8 py-5 font-bold text-base md:text-lg tracking-wide transition-all group-hover:border-[#00E676]/50 group-hover:text-[#00E676] group-hover:bg-[#0A1428] shadow-lg ${align === "left" ? "text-left" : "text-right"}`}
         >
           {item.title}
         </div>
@@ -115,7 +123,7 @@ function ServiceNode({
         height="20"
         viewBox="0 0 32 20"
         fill="none"
-        className="text-ink shrink-0"
+        className="text-[#00E676]/50 shrink-0"
         style={{ transform: align === "right" ? "rotate(180deg)" : undefined }}
         aria-hidden="true"
       >

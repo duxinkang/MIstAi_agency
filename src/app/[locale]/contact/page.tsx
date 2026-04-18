@@ -16,12 +16,12 @@ export async function generateMetadata({
     locale,
     title:
       locale === "zh"
-        ? "联系我们 — StartPoint AI Agent 增长 30 分钟免费咨询"
-        : "Contact StartPoint — Book a free 30-min AI growth consultation",
+        ? "联系我们 — 迷雾智能 MIST Ai 30 分钟免费咨询"
+        : "Contact MIST Ai — Book a free 30-min AI growth consultation",
     description:
       locale === "zh"
-        ? "预约 StartPoint 30 分钟免费咨询，帮你判断 AI Agent 增长策略是否成立。邮箱 contact@startpoint.ai；线下 coffee chat 覆盖杭州 / 上海 / 巴黎；工作日 24 小时内回复。"
-        : "Book a free 30-minute consultation to pressure-test your AI Agent growth plan. Email contact@startpoint.ai — in-person coffee chats in Hangzhou / Shanghai / Paris. Reply within 24 hours on weekdays.",
+        ? "预约迷雾智能 MIST Ai 的 30 分钟免费咨询，帮你判断 AI Agent 增长策略是否成立。邮箱 contact@mistai.ai；线下 coffee chat 覆盖杭州 / 上海 / 巴黎；工作日 24 小时内回复。"
+        : "Book a free 30-minute consultation to pressure-test your AI Agent growth plan. Email contact@mistai.ai — in-person coffee chats in Hangzhou / Shanghai / Paris. Reply within 24 hours on weekdays.",
     path: "/contact",
   });
 }
@@ -53,41 +53,41 @@ export default async function ContactPage({
               <Pill variant="orange" size="md" className="mb-6">
                 {nav("contact")}
               </Pill>
-              <h1 className="sp-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-ink">
+              <h1 className="sp-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-[#E8F0FF]">
                 {t("title")}
               </h1>
-              <p className="mt-6 text-xl md:text-2xl text-ink/80 leading-relaxed">
+              <p className="mt-6 text-xl md:text-2xl text-white/75 leading-relaxed">
                 {t("subtitle")}
               </p>
 
               {/* Contact meta */}
               <div className="mt-10 space-y-5">
                 <div>
-                  <div className="text-xs font-bold tracking-[0.2em] text-ink/50 mb-2">
+                  <div className="text-xs font-bold tracking-[0.2em] text-white/40 mb-2">
                     EMAIL
                   </div>
                   <a
                     href={`mailto:${t("email")}`}
-                    className="sp-display text-2xl md:text-3xl text-orange-600 hover:text-orange-700 transition"
+                    className="sp-display text-2xl md:text-3xl text-[#00E676] hover:text-[#00C853] transition"
                   >
                     {t("email")}
                   </a>
                 </div>
 
                 <div>
-                  <div className="text-xs font-bold tracking-[0.2em] text-ink/50 mb-2">
+                  <div className="text-xs font-bold tracking-[0.2em] text-white/40 mb-2">
                     {locale === "zh" ? "线下" : "IN-PERSON"}
                   </div>
-                  <div className="text-ink/75 leading-relaxed">
+                  <div className="text-white/65 leading-relaxed">
                     {t("locations")}
                   </div>
                 </div>
 
                 <div>
-                  <div className="text-xs font-bold tracking-[0.2em] text-ink/50 mb-2">
+                  <div className="text-xs font-bold tracking-[0.2em] text-white/40 mb-2">
                     {locale === "zh" ? "响应时间" : "RESPONSE TIME"}
                   </div>
-                  <div className="text-ink/75 leading-relaxed">
+                  <div className="text-white/65 leading-relaxed">
                     {locale === "zh"
                       ? "通常在 24 小时内回复（工作日）"
                       : "Usually within 24 hours on weekdays"}
@@ -113,12 +113,12 @@ export default async function ContactPage({
             <Pill variant="orange" size="md" className="mb-5">
               {locale === "zh" ? "咨询前的常见问题" : "Before we hop on a call"}
             </Pill>
-            <h2 className="sp-display text-3xl md:text-4xl lg:text-5xl leading-[1.08] text-ink">
+            <h2 className="sp-display text-3xl md:text-4xl lg:text-5xl leading-[1.08] text-[#E8F0FF]">
               {locale === "zh"
                 ? "这 30 分钟我们会聊什么？"
                 : "What we'll cover in 30 minutes"}
             </h2>
-            <p className="mt-5 text-ink/75 leading-relaxed text-lg">
+            <p className="mt-5 text-white/65 leading-relaxed text-lg">
               {locale === "zh"
                 ? "免费咨询不是销售电话，而是对你当前 AI Agent 产品增长路径的一次快速压力测试。提前把下面几个问题想清楚，我们聊起来会更有效率。"
                 : "The free consultation isn't a sales call — it's a fast pressure-test of your AI Agent product's growth plan. Give the questions below a quick think and we'll move faster."}
@@ -129,28 +129,28 @@ export default async function ContactPage({
             {PRE_CALL_FAQ[locale === "zh" ? "zh" : "en"].map((item) => (
               <article
                 key={item.q}
-                className="rounded-2xl bg-white border border-ink/10 p-7 shadow-sm"
+                className="rounded-2xl bg-[#0D1830] border border-white/8 p-7"
               >
-                <h3 className="sp-display text-xl md:text-2xl text-ink leading-snug">
+                <h3 className="sp-display text-xl md:text-2xl text-[#E8F0FF] leading-snug">
                   {item.q}
                 </h3>
-                <p className="mt-3 text-ink/75 leading-relaxed text-[15px]">
+                <p className="mt-3 text-white/60 leading-relaxed text-[15px]">
                   {item.a}
                 </p>
               </article>
             ))}
           </div>
 
-          <div className="mt-12 max-w-3xl rounded-2xl bg-ink text-white/90 p-8 md:p-10">
-            <h3 className="sp-display text-xl md:text-2xl text-orange-300 mb-3">
+          <div className="mt-12 max-w-3xl rounded-2xl bg-[#030810] text-white/90 p-8 md:p-10 border border-[#00E676]/15">
+            <h3 className="sp-display text-xl md:text-2xl text-[#00E676] mb-3">
               {locale === "zh"
                 ? "不想填表？直接发邮件"
                 : "Prefer email? Just write us"}
             </h3>
             <p className="leading-relaxed text-white/80">
               {locale === "zh"
-                ? "发邮件到 contact@startpoint.ai，一句话介绍你的产品 + 目前最想解决的增长问题就可以。我们承诺在 24 小时内（工作日）亲自回复一条具体的建议——而不是群发模板。"
-                : "Drop a line to contact@startpoint.ai — one sentence about your product plus the one growth question you most want answered is enough. We'll reply personally within 24 hours on weekdays with a concrete suggestion, not a templated form letter."}
+                ? "发邮件到 contact@mistai.ai，一句话介绍你的产品 + 目前最想解决的增长问题就可以。我们承诺在 24 小时内（工作日）亲自回复一条具体的建议——而不是群发模板。"
+                : "Drop a line to contact@mistai.ai — one sentence about your product plus the one growth question you most want answered is enough. We'll reply personally within 24 hours on weekdays with a concrete suggestion, not a templated form letter."}
             </p>
           </div>
         </Container>

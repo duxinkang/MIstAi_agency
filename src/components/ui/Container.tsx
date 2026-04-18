@@ -35,12 +35,12 @@ export function Section({
   bg?: "paper" | "cream" | "orange" | "ink" | "white" | "bone";
 }) {
   const backgrounds = {
-    paper: "bg-paper text-ink",
-    cream: "bg-cream text-ink",
-    bone: "bg-bone text-ink",
-    orange: "bg-orange-500 text-white",
-    ink: "bg-ink text-white",
-    white: "bg-white text-ink",
+    paper: "bg-[#060D1C] text-[#E8F0FF]",
+    cream: "bg-[#0A1428] text-[#E8F0FF]",
+    bone:  "bg-[#0D1830] text-[#E8F0FF]",
+    orange:"bg-[#060D1C] text-[#E8F0FF]",
+    ink:   "bg-[#030810] text-[#E8F0FF]",
+    white: "bg-[#0D1830] text-[#E8F0FF]",
   };
   return (
     <section

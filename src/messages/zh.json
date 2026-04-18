@@ -1,8 +1,8 @@
 {
   "site": {
-    "name": "StartPoint 起始点",
+    "name": "MIST Ai",
     "tagline": "只做 AI Agent 的 0→1 增长",
-    "description": "StartPoint 是专注 AI Agent 与 SaaS 产品 0→1 增长的营销合作伙伴，覆盖 GTM 策略、Product Hunt、Launch Video、海外 KOL、SEO/GEO、广告投放与品牌沉淀。"
+    "description": "迷雾智能 MIST Ai 专注 AI Agent 与 AI SaaS 产品的 0→1 增长，覆盖 GTM 策略、Product Hunt、Launch Video、海外 KOL、SEO/GEO、广告投放与品牌沉淀。"
   },
   "nav": {
     "services": "业务",
@@ -14,8 +14,8 @@
   },
   "hero": {
     "eyebrow": "Let's Start",
-    "titleZh": "起始点",
-    "titleEn": "StartPoint",
+    "titleZh": "迷雾智能",
+    "titleEn": "MIST Ai",
     "subtitle": "只做 AI Agent 的 0→1 增长",
     "cta": "获得 30 分钟免费咨询",
     "ctaSecondary": "看视频案例"
@@ -53,7 +53,7 @@
   },
   "services": {
     "title": "业务覆盖",
-    "description": "StartPoint 提供覆盖 AI 产品全生命周期的六大核心营销服务，从品牌曝光到精准转化，构建完整的增长飞轮",
+    "description": "迷雾智能 MIST Ai 提供覆盖 AI 产品全生命周期的六大核心营销服务，从品牌曝光到精准转化，构建完整的增长飞轮",
     "center": "市场策略",
     "indexTitle": "六大核心营销服务",
     "indexDescription": "覆盖 AI 产品全生命周期，从品牌曝光到精准转化，构建完整的增长飞轮",
@@ -161,7 +161,7 @@
   },
   "about": {
     "hero": {
-      "title": "关于 StartPoint",
+      "title": "关于迷雾智能 MIST Ai",
       "subtitle": "一支同时懂技术、懂增长、懂资本叙事的复合型团队",
       "body": "我们只做一件事：把 AI Agent 产品从 0 带到 1。不是碎片化的营销外包，而是与你共担风险的增长合伙人。"
     },
@@ -172,27 +172,27 @@
         {
           "year": "2022",
           "title": "一次亲自踩过的坑",
-          "text": "创始团队在网易、字节与海外头部 Agency 共同做过超过 100 款产品的增长，也见过足够多因为 GTM 失败而倒下的好技术团队。最痛的一次，是一款在技术 Benchmark 上碾压对手的 AI 产品，因为找不到用户场景，在 9 个月后关停。"
+          "text": "创始团队在网易、字节与海外头部增长团队共同做过超过 100 款产品的增长，也见过足够多因为 GTM 失败而倒下的好技术团队。最痛的一次，是一款在技术 Benchmark 上碾压对手的 AI 产品，因为找不到用户场景，在 9 个月后关停。"
         },
         {
           "year": "2024",
           "title": "一个真实存在的市场空隙",
-          "text": "AI Agent 创业涌现之后，我们发现：传统 Agency 不懂 AI 产品，AI 技术团队不懂海外市场。真正需要的不是「包月的营销外包」，而是能和创始人并肩作战、对结果负责的增长合伙人。"
+          "text": "AI Agent 创业涌现之后，我们发现：传统营销团队不懂 AI 产品，AI 技术团队不懂海外市场。真正需要的不是「包月的营销外包」，而是能和创始人并肩作战、对结果负责的增长团队。"
         },
         {
           "year": "2025",
-          "title": "StartPoint 成立",
+          "title": "MIST Ai 成立",
           "text": "我们不接非 AI 产品，不做一次性项目，只做 3-6 个月起步的深度陪跑。用我们在 Poly.app、Blockit AI、Crunched 身上已经验证过的方法，帮下一支 AI 团队把 0 跑到 1。"
         }
       ],
       "quote": "我们不是一支\"营销团队\"，我们是每家 AI 产品的第一位共创合伙人。",
-      "signature": "— StartPoint 创始团队"
+      "signature": "— MIST Ai 创始团队"
     }
   },
   "engine": {
     "title": "我们的四步增长引擎",
     "subtitle": "从 GTM 产品发布到品牌打造",
-    "description": "无论您的产品处于冷启动期、成长期还是规模化阶段，StartPoint 都能提供精准匹配当前阶段的增长策略，帮助 AI 产品在全球市场建立持久的品牌影响力与用户增长",
+    "description": "无论您的产品处于冷启动期、成长期还是规模化阶段，迷雾智能 MIST Ai 都能提供精准匹配当前阶段的增长策略，帮助 AI 产品在全球市场建立持久的品牌影响力与用户增长",
     "steps": [
       { "n": "一", "title": "诊断与策略", "text": "GTM 策略制定，明确核心价值主张" },
       { "n": "二", "title": "市场发布", "text": "Product Hunt 冲榜，Launch Video 引爆声量" },
@@ -224,7 +224,7 @@
     "eyebrow": "重点案例",
     "category": "B2B AI Agent · 用户深访平台",
     "title": "国内首个 AI 用户深访平台：从产品、市场到融资的 0→1 全路径",
-    "subtitle": "StartPoint 作为核心增长伙伴，协助该 B2B AI Agent 产品完成 0→1 的产品验证、市场启动与融资叙事三线并行。",
+    "subtitle": "迷雾智能 MIST Ai 作为核心增长伙伴，协助该 B2B AI Agent 产品完成 0→1 的产品验证、市场启动与融资叙事三线并行。",
     "workstreamsTitle": "三条并行工作流",
     "workstreams": [
       {
@@ -265,13 +265,13 @@
       { "n": "40%", "label": "互动率超行业均值" },
       { "n": "20+", "label": "客户转化" }
     ],
-    "quote": "StartPoint 是我们真正的\"早期增长营销合伙人\"。从产品怎么卖、对谁讲，到如何面对资本市场，她们提供了贯穿始终的战略与执行支持。首周传播带来的线索爆单，是对我们共同工作的最好证明。",
+    "quote": "MIST Ai 是我们真正的\"早期增长营销合伙人\"。从产品怎么卖、对谁讲，到如何面对资本市场，她们提供了贯穿始终的战略与执行支持。首周传播带来的线索爆单，是对我们共同工作的最好证明。",
     "quoteBy": "— 某 B2B AI Agent 产品创始人"
   },
   "internationalProjects": {
     "eyebrow": "海外项目",
     "title": "不只是 AI —— 我们在海外市场的 0→1 经验",
-    "subtitle": "StartPoint 团队在成立前已有多年跨境 GTM 经验，服务过英国 SaaS、法国 Fintech、西班牙本地服务等多类产品，这些方法论正是我们今天用在 AI Agent 上的底子。",
+    "subtitle": "MIST Ai 团队在成立前已有多年跨境 GTM 经验，服务过英国 SaaS、法国 Fintech、西班牙本地服务等多类产品，这些方法论正是我们今天用在 AI Agent 上的底子。",
     "items": [
       {
         "flag": "🇬🇧",
@@ -301,9 +301,9 @@
     "visit": "访问官网"
   },
   "vs": {
-    "title": "为什么选择 StartPoint？",
+    "title": "为什么选择 MIST Ai？",
     "subtitle": "更理性、更敏捷、更确定的增长路径",
-    "headline": "自建市场团队 vs StartPoint",
+    "headline": "自建市场团队 vs MIST Ai",
     "left": [
       { "title": "启动慢", "text": "招聘 + 磨合周期长，通常需要 4-6 个月才能真正启动" },
       { "title": "成本高", "text": "人力成本高且持续，招聘、管理、试错均为隐性支出" },
@@ -321,7 +321,7 @@
     "title": "助力 AI 产品实现突破性营销增长",
     "subtitle": "达人营销 · Product Hunt · Launch Video · SEO/GEO · 广告投放 · 品牌 IP 打造",
     "items": [
-      { "n": "50+", "label": "全球合作专家", "text": "AI SaaS 营销专家与顶级 Agency 网络" },
+      { "n": "50+", "label": "全球合作专家", "text": "AI SaaS 营销专家与顶级合作网络" },
       { "n": "30+", "label": "成功落地案例", "text": "覆盖多类型 AI 产品的增长实践" },
       { "n": "7天", "label": "快速启动", "text": "确认合作后最快启动时间" },
       { "n": "100%", "label": "AI 赛道专注", "text": "服务 AI / SaaS / Agent 产品" },
@@ -331,7 +331,7 @@
   },
   "advantages": {
     "title": "我们的核心优势",
-    "subtitle": "六大差异化能力，让 StartPoint 成为 AI 产品营销增长的最优合作伙伴",
+    "subtitle": "六大差异化能力，让 MIST Ai 成为 AI 产品营销增长的更优选择",
     "items": [
       { "title": "全链路 AI / SaaS 营销增长方案", "text": "从 GTM 策略到规模化增长，覆盖产品全生命周期的一体化营销解决方案，告别碎片化服务" },
       { "title": "本地化品牌塑造", "text": "深度理解中西方市场文化差异，打造真正贴合目标市场的品牌叙事与传播策略" },
@@ -344,7 +344,7 @@
   "team": {
     "title": "是谁在陪你走 0→1",
     "subtitle": "一支同时懂技术、懂增长、懂资本叙事的复合型团队",
-    "description": "与国外数十位 AI SaaS 营销专家及顶级 Agency 建立长期战略合作关系，共享经过市场验证的方法论与成功案例经验，为客户带来全球视野与本地执行力的双重优势",
+    "description": "与国外数十位 AI SaaS 营销专家及顶级团队建立长期战略合作关系，共享经过市场验证的方法论与成功案例经验，为客户带来全球视野与本地执行力的双重优势",
     "members": [
       { "name": "Frank", "role": "技术", "title": "前网易算法专家", "text": "懂代码，翻译技术价值" },
       { "name": "Elaine", "role": "流量", "title": "头部大厂市场专家", "text": "懂流量，洞察用户" },
@@ -365,7 +365,7 @@
   "outro": {
     "title": "更理性、更敏捷、更确定的增长路径",
     "body1": "对于处于从 0 到 1 阶段的 AI Agent 团队，每一分资源、每一天时间都至关重要。",
-    "body2": "传统自建市场的路径充满不确定性与高昂的隐性成本。选择起始点 StartPoint，意味着选择一条被验证过、且与您利益深度绑定的高效路径"
+    "body2": "传统自建市场的路径充满不确定性与高昂的隐性成本。选择 MIST Ai，意味着选择一条被验证过、且与您利益深度绑定的高效路径"
   },
   "pricing": {
     "title": "我们的合作模式",
@@ -400,7 +400,7 @@
     "title": "联系我们",
     "subtitle": "获得免费 30 分钟咨询",
     "locations": "杭州 / 上海 / 巴黎 可线下 coffee chat",
-    "email": "contact@startpoint.ai",
+    "email": "contact@mistai.ai",
     "form": {
       "name": "您的称呼",
       "company": "公司 / 产品名",
@@ -410,18 +410,18 @@
       "submit": "预约咨询",
       "submitting": "提交中…",
       "success": "已收到，我们会在 24 小时内回复到您的邮箱",
-      "error": "提交失败，请直接邮件联系 contact@startpoint.ai"
+      "error": "提交失败，请直接邮件联系 contact@mistai.ai"
     }
   },
   "footer": {
-    "rights": "© 2026 StartPoint Agency · 只做 AI Agent 的 0→1 增长",
+    "rights": "© 2026 MIST Ai · 只做 AI Agent 的 0→1 增长",
     "language": "语言",
     "privacy": "隐私政策"
   },
   "faq": {
     "title": "常见问题",
     "items": [
-      { "q": "StartPoint 只服务 AI Agent 吗？", "a": "是的。我们专注 AI Agent / AI SaaS 产品的 0→1 增长，不做电商、游戏、消费品牌等品类。垂直聚焦让我们对目标用户的决策路径和产品感知理解得更深。" },
+      { "q": "MIST Ai 只服务 AI Agent 吗？", "a": "是的。我们专注 AI Agent / AI SaaS 产品的 0→1 增长，不做电商、游戏、消费品牌等品类。垂直聚焦让我们对目标用户的决策路径和产品感知理解得更深。" },
       { "q": "最快多久能启动？", "a": "战略问诊 3 天内可开始；轻量陪跑与完整陪跑签约后最快 7 天启动，直接进入执行阶段。" },
       { "q": "收费模式是什么？", "a": "三档：战略问诊 ¥15,000 一次性；轻量陪跑 ¥30k-50k / 月；完整陪跑 ¥80k-120k / 月 + 增长利润的 10-20% 分成（按 MRR 增量或净利润增量计算）。具体比例按产品阶段与增长目标一对一商定。" },
       { "q": "如何衡量增长效果？", "a": "在启动阶段我们会和你共同定义 3 个北极星指标（通常是注册数、付费转化、ARR 增长），所有工作围绕这些指标复盘。完整版合作里我们的分成直接与这些指标挂钩。" },

@@ -1,8 +1,7 @@
 import { clsx } from "clsx";
 
 /**
- * StartPoint wordmark: "①StartPoint" on a black pill.
- * Matches the in-deck brand mark.
+ * MIST Ai wordmark — neon gradient pill (dark) or glass pill (light).
  */
 export function Logo({
   className,
@@ -24,12 +23,12 @@ export function Logo({
       className={clsx(
         "inline-flex items-center rounded-full font-bold tracking-tight",
         variant === "dark"
-          ? "bg-ink text-white"
-          : "bg-white text-ink border border-ink/10",
+          ? "bg-gradient-to-r from-[#00E676] to-[#2979FF] text-[#030810]"
+          : "bg-white/10 text-[#E8F0FF] border border-white/20 backdrop-blur-sm",
         sizeCls,
         className,
       )}
-      aria-label="StartPoint"
+      aria-label="MIST Ai"
     >
       <svg
         viewBox="0 0 24 24"
@@ -58,7 +57,7 @@ export function Logo({
           1
         </text>
       </svg>
-      <span>StartPoint</span>
+      <span>MIST Ai</span>
     </span>
   );
 }

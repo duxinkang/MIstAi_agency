@@ -44,8 +44,8 @@ export function ContactForm() {
   }
 
   const inputCls =
-    "w-full rounded-xl border border-ink/15 bg-white px-4 py-3 text-ink placeholder-ink/40 focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500/20 transition";
-  const labelCls = "block text-sm font-semibold text-ink/80 mb-2";
+    "w-full rounded-xl border border-white/12 bg-[#060D1C] px-4 py-3 text-[#E8F0FF] placeholder-white/30 focus:border-[#00E676] focus:outline-none focus:ring-2 focus:ring-[#00E676]/15 transition";
+  const labelCls = "block text-sm font-semibold text-white/65 mb-2";
 
   return (
     <motion.form
@@ -54,7 +54,7 @@ export function ContactForm() {
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
       onSubmit={onSubmit}
-      className="space-y-5 rounded-3xl bg-white border border-ink/8 p-6 md:p-10 shadow-sm"
+      className="space-y-5 rounded-3xl bg-[#0D1830] border border-white/8 p-6 md:p-10"
       noValidate
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -166,7 +166,7 @@ export function ContactForm() {
         <button
           type="submit"
           disabled={status === "submitting"}
-          className="inline-flex items-center justify-center rounded-full bg-orange-500 text-white font-semibold tracking-wide transition-all text-base px-8 py-3.5 hover:bg-orange-600 disabled:opacity-60 disabled:cursor-not-allowed shadow-sm"
+          className="inline-flex items-center justify-center rounded-full bg-[#00E676] text-[#030810] font-semibold tracking-wide transition-all text-base px-8 py-3.5 hover:bg-[#00C853] disabled:opacity-60 disabled:cursor-not-allowed shadow-[0_0_24px_rgba(0,230,118,0.25)]"
         >
           {status === "submitting" ? t("submitting") : t("submit")}
           <span className="ml-2">→</span>
@@ -176,7 +176,7 @@ export function ContactForm() {
       {status === "success" && (
         <div
           role="status"
-          className="rounded-xl bg-green-50 border border-green-200 text-green-800 px-4 py-3 text-sm"
+          className="rounded-xl bg-[#00E676]/10 border border-[#00E676]/30 text-[#00E676] px-4 py-3 text-sm"
         >
           ✓ {t("success")}
         </div>
@@ -184,7 +184,7 @@ export function ContactForm() {
       {status === "error" && (
         <div
           role="alert"
-          className="rounded-xl bg-red-50 border border-red-200 text-red-800 px-4 py-3 text-sm"
+          className="rounded-xl bg-red-900/20 border border-red-500/30 text-red-400 px-4 py-3 text-sm"
         >
           ✕ {t("error")}
         </div>

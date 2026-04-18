@@ -5,14 +5,6 @@ import { motion } from "framer-motion";
 import { Container, Section } from "@/components/ui/Container";
 import { Pill } from "@/components/ui/Pill";
 
-/**
- * InternationalProjects — lineup of pre-StartPoint overseas 0→1 work
- * (UK SaaS, French Fintech, Spanish local services). Shown on /cases
- * under the AI-focused grid to signal that the team's GTM playbook is
- * battle-tested across markets and categories — not just AI.
- *
- * External links open in a new tab with noopener/noreferrer.
- */
 type Project = {
   flag: string;
   country: string;
@@ -39,10 +31,10 @@ export function InternationalProjects() {
           <Pill variant="ink" size="md" className="mb-6">
             {t("eyebrow")}
           </Pill>
-          <h2 className="sp-display text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-ink">
+          <h2 className="sp-display text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-[#E8F0FF]">
             {t("title")}
           </h2>
-          <p className="mt-5 text-base md:text-lg text-ink/70 leading-relaxed">
+          <p className="mt-5 text-base md:text-lg text-white/60 leading-relaxed">
             {t("subtitle")}
           </p>
         </motion.div>
@@ -58,7 +50,7 @@ export function InternationalProjects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
-              className="group rounded-2xl bg-white border border-ink/10 p-7 md:p-8 hover:border-orange-500/60 hover:shadow-xl transition-all flex flex-col"
+              className="group rounded-2xl bg-[#0D1830] border border-white/8 p-7 md:p-8 hover:border-[#00E676]/40 hover:shadow-[0_0_30px_rgba(0,230,118,0.08)] transition-all flex flex-col"
             >
               <div className="flex items-start justify-between mb-6">
                 <span className="text-4xl md:text-5xl leading-none">
@@ -70,7 +62,7 @@ export function InternationalProjects() {
                   viewBox="0 0 20 20"
                   fill="none"
                   aria-hidden="true"
-                  className="text-ink/30 group-hover:text-orange-500 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all"
+                  className="text-white/25 group-hover:text-[#00E676] group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all"
                 >
                   <path
                     d="M5 15L15 5M15 5H7M15 5V13"
@@ -82,22 +74,22 @@ export function InternationalProjects() {
                 </svg>
               </div>
 
-              <div className="text-ink/55 text-xs font-bold tracking-[0.22em] uppercase">
+              <div className="text-white/40 text-xs font-bold tracking-[0.22em] uppercase">
                 {p.country}
               </div>
-              <div className="mt-1 text-ink/70 text-sm">
+              <div className="mt-1 text-white/55 text-sm">
                 {p.industry}
               </div>
 
-              <h3 className="mt-5 sp-display text-2xl md:text-3xl text-ink leading-tight group-hover:text-orange-500 transition-colors">
+              <h3 className="mt-5 sp-display text-2xl md:text-3xl text-[#E8F0FF] leading-tight group-hover:text-[#00E676] transition-colors">
                 {p.outcome}
               </h3>
 
-              <div className="mt-auto pt-6 flex items-center justify-between border-t border-ink/10">
-                <span className="text-ink/80 font-bold text-sm">
+              <div className="mt-auto pt-6 flex items-center justify-between border-t border-white/8">
+                <span className="text-white/70 font-bold text-sm">
                   {p.name}
                 </span>
-                <span className="text-ink/40 group-hover:text-orange-500 text-xs font-semibold tracking-wide transition-colors">
+                <span className="text-white/35 group-hover:text-[#00E676] text-xs font-semibold tracking-wide transition-colors">
                   {t("visit")} →
                 </span>
               </div>

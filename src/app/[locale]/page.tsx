@@ -51,12 +51,12 @@ export default async function HomePage({
   const heroVideo = videoObjectSchema({
     name:
       locale === "zh"
-        ? "StartPoint × Poly.app 发布视频 — AI Agent 0→1 增长案例"
-        : "StartPoint × Poly.app launch video — AI Agent 0→1 growth case",
+        ? "MIST Ai × Poly.app 发布视频 — AI Agent 0→1 增长案例"
+        : "MIST Ai × Poly.app launch video — AI Agent 0→1 growth case",
     description:
       locale === "zh"
-        ? "StartPoint 为 AI Agent 产品 Poly.app 操刀的发布视频,60 秒讲清核心价值主张,在 Product Hunt 冲榜与首页首屏双通道同时驱动转化。"
-        : "StartPoint's launch video for AI Agent product Poly.app — a 60-second narrative that landed on Product Hunt's top slot and drove homepage conversion.",
+        ? "MIST Ai 为 AI Agent 产品 Poly.app 操刀的发布视频,60 秒讲清核心价值主张,在 Product Hunt 冲榜与首页首屏双通道同时驱动转化。"
+        : "MIST Ai's launch video for AI Agent product Poly.app — a 60-second narrative that landed on Product Hunt's top slot and drove homepage conversion.",
     thumbnailUrl: `${SITE_URL}/videos/posters/poly.jpg`,
     contentUrl: `${SITE_URL}/videos/poly.mp4`,
     uploadDate: "2025-06-01",

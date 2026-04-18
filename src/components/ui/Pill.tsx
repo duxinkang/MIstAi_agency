@@ -1,7 +1,6 @@
 import { clsx } from "clsx";
 import type { ComponentPropsWithoutRef, ReactNode } from "react";
 
-/** The orange rounded pill used throughout the deck for labels */
 export function Pill({
   children,
   variant = "orange",
@@ -14,10 +13,10 @@ export function Pill({
   size?: "sm" | "md" | "lg";
 } & ComponentPropsWithoutRef<"span">) {
   const variants = {
-    orange: "bg-orange-500 text-white",
-    ink: "bg-ink text-white",
-    soft: "bg-orange-50 text-orange-700",
-    outline: "bg-transparent text-ink border border-ink/20",
+    orange:  "bg-[#00E676] text-[#030810]",
+    ink:     "bg-[#0D1830] text-[#E8F0FF] border border-white/15",
+    soft:    "bg-[rgba(0,230,118,0.12)] text-[#00E676] border border-[#00E676]/25",
+    outline: "bg-transparent text-[#E8F0FF] border border-white/25",
   };
   const sizes = {
     sm: "text-xs px-2.5 py-1",

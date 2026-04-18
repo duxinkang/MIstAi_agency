@@ -9,7 +9,7 @@ export const siteSettings = defineType({
       name: "siteName",
       type: "string",
       title: "Site name",
-      initialValue: "StartPoint Agency",
+      initialValue: "MIST Ai",
     }),
     defineField({
       name: "tagline",
@@ -33,7 +33,7 @@ export const siteSettings = defineType({
       name: "contactEmail",
       type: "string",
       title: "Contact email",
-      initialValue: "contact@startpoint.ai",
+      initialValue: "contact@mistai.ai",
     }),
     defineField({
       name: "locations",

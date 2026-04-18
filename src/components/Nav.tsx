@@ -41,7 +41,7 @@ export function Nav() {
       className={clsx(
         "fixed inset-x-0 top-0 z-50 transition-all",
         scrolled
-          ? "bg-paper/90 backdrop-blur-md border-b border-ink/10"
+          ? "bg-[#060D1C]/95 backdrop-blur-md border-b border-white/8"
           : "bg-transparent",
       )}
     >
@@ -56,7 +56,7 @@ export function Nav() {
               <Link
                 key={l.href}
                 href={l.href}
-                className="text-sm font-medium text-ink/80 hover:text-orange-500 transition-colors"
+                className="text-sm font-medium text-white/70 hover:text-[#00E676] transition-colors"
               >
                 {l.label}
               </Link>
@@ -66,7 +66,7 @@ export function Nav() {
           <div className="flex items-center gap-3">
             <button
               onClick={toggleLocale}
-              className="hidden md:inline-flex items-center rounded-full border border-ink/15 px-3 py-1 text-xs font-medium text-ink/70 hover:text-ink hover:border-ink/40 transition"
+              className="hidden md:inline-flex items-center rounded-full border border-white/15 px-3 py-1 text-xs font-medium text-white/60 hover:text-white hover:border-white/35 transition"
               aria-label="Toggle language"
             >
               {locale === "zh" ? "EN" : "中"}
@@ -75,7 +75,7 @@ export function Nav() {
               {t("cta")}
             </Button>
             <button
-              className="md:hidden p-2 -mr-2"
+              className="md:hidden p-2 -mr-2 text-white/80"
               onClick={() => setOpen(!open)}
               aria-label="Menu"
             >
@@ -92,13 +92,13 @@ export function Nav() {
         </div>
 
         {open && (
-          <div className="md:hidden pb-4 space-y-2 border-t border-ink/10 pt-4">
+          <div className="md:hidden pb-4 space-y-2 border-t border-white/10 pt-4">
             {links.map((l) => (
               <Link
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="block py-2 text-base font-medium text-ink/80 hover:text-orange-500"
+                className="block py-2 text-base font-medium text-white/80 hover:text-[#00E676]"
               >
                 {l.label}
               </Link>
@@ -108,7 +108,7 @@ export function Nav() {
                 toggleLocale();
                 setOpen(false);
               }}
-              className="block py-2 text-sm text-ink/60"
+              className="block py-2 text-sm text-white/50"
             >
               {locale === "zh" ? "English" : "中文"}
             </button>

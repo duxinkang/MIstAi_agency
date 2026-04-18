@@ -18,11 +18,11 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "cases" });
   return buildMetadata({
     locale,
-    title: `${t("title")} — StartPoint`,
+    title: `${t("title")} — MIST Ai`,
     description:
       locale === "zh"
-        ? "StartPoint 合作过的 AI 产品真实增长数据：Product Hunt 冲榜、SEO 有机增长、达人营销案例。"
-        : "Real AI product growth outcomes StartPoint has delivered — Product Hunt launches, SEO growth, and creator marketing campaigns.",
+        ? "MIST Ai 合作过的 AI 产品真实增长数据：Product Hunt 冲榜、SEO 有机增长、达人营销案例。"
+        : "Real AI product growth outcomes MIST Ai has delivered — Product Hunt launches, SEO growth, and creator marketing campaigns.",
     path: "/cases",
   });
 }
@@ -53,10 +53,10 @@ export default async function CasesPage({
           <h1 className="sp-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] max-w-4xl">
             {t("title")}
           </h1>
-          <p className="mt-6 max-w-3xl text-lg md:text-xl text-ink/80 leading-relaxed">
+          <p className="mt-6 max-w-3xl text-lg md:text-xl text-white/70 leading-relaxed">
             {locale === "zh"
-              ? "以下是 StartPoint 合作过的部分 AI 产品真实增长结果。更多在 NDA 下可以一对一分享。"
-              : "Selected public case studies from StartPoint engagements. More available 1:1 under NDA."}
+              ? "以下是 MIST Ai 合作过的部分 AI 产品真实增长结果。更多在 NDA 下可以一对一分享。"
+              : "Selected public case studies from MIST Ai engagements. More available 1:1 under NDA."}
           </p>
         </Container>
       </Section>
@@ -67,7 +67,7 @@ export default async function CasesPage({
       {/* Shorter AI-product case cards (Product Hunt / SEO / creators) */}
       <CasesGrid />
 
-      {/* Pre-StartPoint overseas 0→1 work across categories */}
+      {/* Pre-Mistai overseas 0→1 work across categories */}
       <InternationalProjects />
 
       <Section bg="ink" className="!py-20">

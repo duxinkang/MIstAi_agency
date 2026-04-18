@@ -1,33 +1,42 @@
 @import "tailwindcss";
 
 /* ------------------------------------------------------------------
-   StartPoint Design Tokens
-   Source: StartPoint AI Agent Growth brand deck (2026)
+   MIST Ai Design Tokens — Deep Space Dark Theme
+   Primary:   Neon Green  #00E676  (MIST text in logo)
+   Secondary: Electric Blue #2979FF (Ai text in logo)
+   Base:      Deep Navy    #060D1C  (logo background)
 ------------------------------------------------------------------ */
 :root {
-  /* Brand palette */
-  --sp-orange-50:  #FFF1EA;
-  --sp-orange-100: #FFD9C2;
-  --sp-orange-200: #FFB38A;
-  --sp-orange-300: #FF8854;
-  --sp-orange-400: #F5551D;   /* primary hero orange */
-  --sp-orange-500: #EA4510;   /* button / accent */
-  --sp-orange-600: #C2380B;   /* hover / deep */
-  --sp-orange-700: #8C2606;   /* text on light */
+  /* Neon Green — primary brand (replaces former orange palette) */
+  --sp-orange-50:  rgba(0, 230, 118, 0.07);
+  --sp-orange-100: rgba(0, 230, 118, 0.12);
+  --sp-orange-200: rgba(0, 230, 118, 0.22);
+  --sp-orange-300: #69F0AE;
+  --sp-orange-400: #00E676;
+  --sp-orange-500: #00E676;
+  --sp-orange-600: #00C853;
+  --sp-orange-700: #00BFA5;
 
-  --sp-indigo-500: #5C4BD1;   /* gradient ball cool side */
-  --sp-indigo-600: #3E2FA6;
+  /* Electric Blue — secondary brand */
+  --sp-indigo-500: #2979FF;
+  --sp-indigo-600: #1565C0;
 
-  --sp-cream:      #F6EFE0;   /* reddit / ph section bg */
-  --sp-bone:       #EFEBE3;
-  --sp-paper:      #F0EFEB;   /* hero bg */
-  --sp-ink:        #0A0A0A;   /* headings */
-  --sp-ink-soft:   #1A1A1A;
-  --sp-muted:      #6B6B6B;
+  /* Dark surfaces — deep space navy layers */
+  --sp-paper:      #060D1C;
+  --sp-cream:      #0A1428;
+  --sp-bone:       #0D1830;
+
+  /* Ink: near-black for bg-ink accent elements */
+  --sp-ink:        #030810;
+  --sp-ink-soft:   #0D1830;
+  --sp-muted:      #6B8099;
+
+  /* Primary text on dark */
+  --sp-text:       #E8F0FF;
 
   /* Semantic */
   --background: var(--sp-paper);
-  --foreground: var(--sp-ink);
+  --foreground: var(--sp-text);
 
   /* Typography */
   --font-display: "HarmonyOS Sans SC", "PingFang SC", "Inter", -apple-system,
@@ -74,7 +83,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* Utility: big hero title - tight tracking, heavy weight */
+/* Utility: big hero title */
 .sp-display {
   font-family: var(--font-display);
   font-weight: 900;
@@ -82,7 +91,7 @@ body {
   line-height: 0.95;
 }
 
-/* Utility: the pill-shaped orange tag used throughout the deck */
+/* Pill tag */
 .sp-pill {
   display: inline-flex;
   align-items: center;
@@ -90,48 +99,55 @@ body {
   padding: 0.4rem 1rem;
   border-radius: 999px;
   background: var(--sp-orange-500);
-  color: #fff;
+  color: var(--sp-ink);
   font-weight: 600;
   font-size: 0.875rem;
 }
 
-/* Gradient ball used on hero + section dividers */
+/* Neon Green gradient ball — MIST top arc */
 .sp-ball {
   background: radial-gradient(
-    circle at 30% 30%,
-    #FFD7BF 0%,
-    var(--sp-orange-400) 35%,
-    var(--sp-orange-600) 70%,
-    var(--sp-indigo-600) 100%
+    circle at 35% 30%,
+    #B2FFD9 0%,
+    #00E676 30%,
+    #00BFA5 60%,
+    #1565C0 100%
   );
   border-radius: 9999px;
-  filter: saturate(1.05);
+  filter: blur(2px) saturate(1.3);
+  box-shadow:
+    0 0 80px rgba(0, 230, 118, 0.4),
+    0 0 160px rgba(41, 121, 255, 0.18);
 }
 
+/* Electric Blue gradient ball — Ai lower arc */
 .sp-ball-warm {
   background: radial-gradient(
-    circle at 35% 30%,
-    #FFE3CC 0%,
-    #FFA66B 40%,
-    var(--sp-orange-500) 80%
+    circle at 40% 35%,
+    #82B1FF 0%,
+    #2979FF 40%,
+    #1565C0 72%,
+    #0D47A1 100%
   );
   border-radius: 9999px;
+  filter: blur(2px) saturate(1.2);
+  box-shadow: 0 0 80px rgba(41, 121, 255, 0.35);
 }
 
-/* The grid-filled circle decoration top-right of hero */
+/* Grid-filled circle — neon green lines */
 .sp-grid-circle {
   background-image:
-    linear-gradient(to right, var(--sp-ink) 1px, transparent 1px),
-    linear-gradient(to bottom, var(--sp-ink) 1px, transparent 1px);
+    linear-gradient(to right, rgba(0, 230, 118, 0.22) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 230, 118, 0.22) 1px, transparent 1px);
   background-size: 14px 14px;
   border-radius: 9999px;
   mask-image: radial-gradient(circle, #000 55%, transparent 65%);
   -webkit-mask-image: radial-gradient(circle, #000 55%, transparent 65%);
 }
 
-/* The dot matrix */
+/* Dot matrix */
 .sp-dot-matrix {
-  background-image: radial-gradient(var(--sp-ink) 1.5px, transparent 1.5px);
+  background-image: radial-gradient(rgba(232, 240, 255, 0.3) 1.5px, transparent 1.5px);
   background-size: 14px 14px;
 }
 
@@ -139,7 +155,7 @@ body {
 .sp-snap { scroll-snap-type: y mandatory; }
 .sp-snap-child { scroll-snap-align: start; }
 
-/* Focus visible */
+/* Focus visible — neon green ring */
 :focus-visible {
   outline: 2px solid var(--sp-orange-500);
   outline-offset: 2px;

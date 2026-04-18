@@ -14,7 +14,7 @@ export function KolDetail() {
     <Section bg="paper" className="!pt-4">
       <Container size="full">
         <div className="mb-10">
-          <h2 className="sp-display text-2xl md:text-3xl text-orange-500 max-w-2xl leading-tight">
+          <h2 className="sp-display text-2xl md:text-3xl text-[#00E676] max-w-2xl leading-tight">
             {t("subtitle")}
           </h2>
         </div>
@@ -27,7 +27,7 @@ export function KolDetail() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="rounded-2xl border-2 border-orange-500 bg-white overflow-hidden flex flex-col"
+              className="rounded-2xl border border-[#00E676]/30 bg-[#0D1830] overflow-hidden flex flex-col"
             >
               <div
                 aria-hidden="true"
@@ -35,10 +35,10 @@ export function KolDetail() {
                 style={{
                   background:
                     i === 0
-                      ? "linear-gradient(135deg, #FFA872, #EA4510)"
+                      ? "linear-gradient(135deg, #00BFA5, #00E676)"
                       : i === 1
-                        ? "linear-gradient(135deg, #1A1A1A, #5C4BD1)"
-                        : "linear-gradient(135deg, #FFD9B8, #FFAE78)",
+                        ? "linear-gradient(135deg, #0A1E3F, #2979FF)"
+                        : "linear-gradient(135deg, #004D40, #00E676)",
                 }}
               >
                 <div className="absolute inset-0 flex items-center justify-center text-6xl opacity-70">
@@ -46,8 +46,8 @@ export function KolDetail() {
                 </div>
               </div>
               <div className="p-6 flex-1">
-                <h3 className="font-bold text-ink text-lg">{step.title}</h3>
-                <p className="mt-3 text-sm text-ink/75 leading-relaxed">
+                <h3 className="font-bold text-[#E8F0FF] text-lg">{step.title}</h3>
+                <p className="mt-3 text-sm text-white/65 leading-relaxed">
                   {step.text}
                 </p>
               </div>
@@ -59,12 +59,12 @@ export function KolDetail() {
             and AI answer engines have more to index than a 5-word hero. */}
         <div className="mt-20 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
           <div>
-            <h2 className="sp-display text-2xl md:text-3xl text-ink leading-tight">
+            <h2 className="sp-display text-2xl md:text-3xl text-[#E8F0FF] leading-tight">
               {isZh
                 ? "AI Agent 为什么比 SaaS 更依赖真人口碑"
                 : "Why AI Agents depend on real-user word-of-mouth more than SaaS"}
             </h2>
-            <div className="mt-5 space-y-4 text-ink/80 leading-relaxed">
+            <div className="mt-5 space-y-4 text-white/75 leading-relaxed">
               <p>
                 {isZh
                   ? "AI Agent 的核心价值是代替人完成任务，但「它真的能搞定我的活吗」这句话，产品自己说没有说服力——只有另一个真人展示完整工作流才能。这就是为什么同等预算下，KOL / KOC 内容对 AI Agent 的转化贡献，通常是投信息流广告的 2-4 倍。"
@@ -78,8 +78,8 @@ export function KolDetail() {
             </div>
           </div>
 
-          <div className="rounded-2xl bg-cream border border-ink/10 p-7">
-            <h3 className="sp-display text-xl md:text-2xl text-ink">
+          <div className="rounded-2xl bg-[#0A1428] border border-white/10 p-7">
+            <h3 className="sp-display text-xl md:text-2xl text-[#E8F0FF]">
               {isZh ? "合作里常见的三个坑" : "Three pitfalls we'll help you avoid"}
             </h3>
             <ul className="mt-5 space-y-4">
@@ -97,9 +97,9 @@ export function KolDetail() {
               ).map((line) => (
                 <li
                   key={line}
-                  className="flex gap-3 text-ink/80 text-[15px] leading-relaxed"
+                  className="flex gap-3 text-white/75 text-[15px] leading-relaxed"
                 >
-                  <span className="mt-1.5 shrink-0 w-1.5 h-1.5 rounded-full bg-orange-500" />
+                  <span className="mt-1.5 shrink-0 w-1.5 h-1.5 rounded-full bg-[#00E676]" />
                   <span>{line}</span>
                 </li>
               ))}

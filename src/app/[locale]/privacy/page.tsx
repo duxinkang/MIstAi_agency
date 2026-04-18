@@ -15,12 +15,12 @@ export async function generateMetadata({
     locale,
     title:
       locale === "zh"
-        ? "隐私政策 — StartPoint AI Agent 增长机构"
-        : "Privacy Policy — StartPoint AI Agent growth agency",
+        ? "隐私政策 — 迷雾智能 MIST Ai"
+        : "Privacy Policy — MIST Ai",
     description:
       locale === "zh"
-        ? "StartPoint 的隐私政策:我们收集哪些信息、如何使用、如何与第三方共享、你对自己数据享有的权利,以及 GDPR / CCPA 合规承诺。"
-        : "StartPoint's privacy policy — what we collect, how we use it, who we share it with, your GDPR / CCPA rights, and how to exercise them.",
+        ? "迷雾智能 MIST Ai 的隐私政策：我们收集哪些信息、如何使用、如何与第三方共享、你对自己数据享有的权利，以及 GDPR / CCPA 合规承诺。"
+        : "MIST Ai's privacy policy — what we collect, how we use it, who we share it with, your GDPR / CCPA rights, and how to exercise them.",
     path: "/privacy",
   });
 }
@@ -47,10 +47,10 @@ export default async function PrivacyPage({
           <Pill variant="orange" size="md" className="mb-6">
             {isZh ? "隐私政策" : "Privacy Policy"}
           </Pill>
-          <h1 className="sp-display text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-ink">
+          <h1 className="sp-display text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-[#E8F0FF]">
             {isZh ? "隐私政策" : "Privacy Policy"}
           </h1>
-          <p className="mt-6 text-sm text-ink/60">
+          <p className="mt-6 text-sm text-white/50">
             {isZh
               ? "最近更新:2026 年 4 月 18 日"
               : "Last updated: April 18, 2026"}
@@ -65,7 +65,7 @@ export default async function PrivacyPage({
 
 function Prose({ children }: { children: React.ReactNode }) {
   return (
-    <div className="mt-10 max-w-3xl space-y-8 text-ink/80 leading-relaxed text-[17px]">
+    <div className="mt-10 max-w-3xl space-y-8 text-white/75 leading-relaxed text-[17px]">
       {children}
     </div>
   );
@@ -73,7 +73,7 @@ function Prose({ children }: { children: React.ReactNode }) {
 
 function H2({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className="sp-display text-2xl md:text-3xl text-ink mt-10 mb-3">
+    <h2 className="sp-display text-2xl md:text-3xl text-[#E8F0FF] mt-10 mb-3">
       {children}
     </h2>
   );
@@ -83,8 +83,8 @@ function ZhBody() {
   return (
     <Prose>
       <p>
-        StartPoint(&ldquo;我们&rdquo;、&ldquo;本机构&rdquo;)重视每一位访问者与客户的隐私。本政策说明了我们在
-        www.startpointagency.com(以下简称&ldquo;本网站&rdquo;)以及线下咨询
+        迷雾智能 MIST Ai(&ldquo;我们&rdquo;、&ldquo;本机构&rdquo;)重视每一位访问者与客户的隐私。本政策说明了我们在
+        www.mistaiagency.com(以下简称&ldquo;本网站&rdquo;)以及线下咨询
         / 合作过程中会收集哪些个人信息、如何使用这些信息、以及你对自己的信息享有的权利。
       </p>
 
@@ -106,12 +106,12 @@ function ZhBody() {
 
       <H2>我们如何与第三方共享</H2>
       <p>
-        为运营必要,我们使用以下可信的第三方服务处理数据,其隐私条款均符合业界主流标准:托管与 CDN(Vercel)、邮件收发(contact@startpoint.ai 自营邮箱与相应 SMTP 提供商)、以及必要时的财务票据处理。我们不会将你的信息共享给上述范围之外的任何第三方。
+        为运营必要,我们使用以下可信的第三方服务处理数据,其隐私条款均符合业界主流标准:托管与 CDN(Vercel)、邮件收发(contact@mistai.ai 自营邮箱与相应 SMTP 提供商)、以及必要时的财务票据处理。我们不会将你的信息共享给上述范围之外的任何第三方。
       </p>
 
       <H2>你享有的权利(GDPR / CCPA)</H2>
       <p>
-        如果你位于欧盟 / 英国 / 加州等适用隐私法律的地区,你有权:查询我们持有的关于你的信息、要求更正或删除这些信息、撤回此前授予的处理同意、以及就涉嫌违规行为向所在地数据保护机构投诉。要行使任一权利,请发送邮件至 contact@startpoint.ai,我们会在 30 天内回复。
+        如果你位于欧盟 / 英国 / 加州等适用隐私法律的地区,你有权:查询我们持有的关于你的信息、要求更正或删除这些信息、撤回此前授予的处理同意、以及就涉嫌违规行为向所在地数据保护机构投诉。要行使任一权利,请发送邮件至 contact@mistai.ai,我们会在 30 天内回复。
       </p>
 
       <H2>Cookie 与分析</H2>
@@ -133,10 +133,10 @@ function ZhBody() {
       <p>
         如对本政策或你的个人信息有任何疑问、或希望行使上述权利,请发送邮件至{" "}
         <a
-          href="mailto:contact@startpoint.ai"
-          className="text-orange-600 hover:text-orange-700 underline"
+          href="mailto:contact@mistai.ai"
+          className="text-[#00E676] hover:text-[#00C853] underline"
         >
-          contact@startpoint.ai
+          contact@mistai.ai
         </a>
         。线下办公地址:杭州 / 上海 / 巴黎。
       </p>
@@ -148,10 +148,10 @@ function EnBody() {
   return (
     <Prose>
       <p>
-        StartPoint (&ldquo;we&rdquo;, &ldquo;us&rdquo;) takes the privacy of
+        MIST Ai (&ldquo;we&rdquo;, &ldquo;us&rdquo;) takes the privacy of
         every visitor and client seriously. This policy explains what personal
         information we collect through{" "}
-        <span className="whitespace-nowrap">www.startpointagency.com</span>{" "}
+        <span className="whitespace-nowrap">www.mistaiagency.com</span>{" "}
         (the &ldquo;Site&rdquo;) and in the course of our consulting work, how
         we use that information, and the rights you have over your data.
       </p>
@@ -190,7 +190,7 @@ function EnBody() {
         For operational necessity we rely on these trusted vendors, each of
         which meets industry-standard privacy and security requirements:
         hosting and CDN (Vercel), email delivery
-        (contact@startpoint.ai backed by a compliant SMTP provider), and — when
+        (contact@mistai.ai backed by a compliant SMTP provider), and — when
         invoiced — our financial records processor. We do not share your
         information with any party outside that scope.
       </p>
@@ -203,10 +203,10 @@ function EnBody() {
         consent you previously gave, and file a complaint with your local data
         protection authority. To exercise any of these rights, email{" "}
         <a
-          href="mailto:contact@startpoint.ai"
-          className="text-orange-600 hover:text-orange-700 underline"
+          href="mailto:contact@mistai.ai"
+          className="text-[#00E676] hover:text-[#00C853] underline"
         >
-          contact@startpoint.ai
+          contact@mistai.ai
         </a>
         . We will respond within 30 days.
       </p>
@@ -237,10 +237,10 @@ function EnBody() {
       <p>
         Questions about this policy or your data? Email{" "}
         <a
-          href="mailto:contact@startpoint.ai"
-          className="text-orange-600 hover:text-orange-700 underline"
+          href="mailto:contact@mistai.ai"
+          className="text-[#00E676] hover:text-[#00C853] underline"
         >
-          contact@startpoint.ai
+          contact@mistai.ai
         </a>
         . Offices: Hangzhou / Shanghai / Paris.
       </p>

@@ -5,14 +5,14 @@ import { SITE_URL } from "@/lib/seo";
  * Spec: https://llmstxt.org/
  *
  * Served as text/plain. Single source of truth for how ChatGPT, Claude,
- * Perplexity, and Gemini should describe StartPoint when asked.
+ * Perplexity, and Gemini should describe MIST Ai when asked.
  */
 export async function GET() {
-  const body = `# StartPoint Agency
+  const body = `# MIST Ai
 
-> StartPoint is a growth partner that works exclusively with AI Agent and AI SaaS products in their 0→1 stage. We cover go-to-market strategy, Product Hunt launches, Launch Video production, overseas KOL / KOC marketing, SEO / GEO (Generative Engine Optimization), paid advertising, and Reddit / community growth.
+> MIST Ai is focused exclusively on 0→1 growth for AI Agent and AI SaaS products. We cover go-to-market strategy, Product Hunt launches, Launch Video production, overseas KOL / KOC marketing, SEO / GEO (Generative Engine Optimization), paid advertising, and Reddit / community growth.
 
-StartPoint is based in Hangzhou, Shanghai, and Paris. Contact: contact@startpoint.ai. Website: ${SITE_URL}
+MIST Ai is based in Hangzhou, Shanghai, and Paris. Contact: contact@mistai.ai. Website: ${SITE_URL}
 
 ## What we do
 
@@ -58,7 +58,7 @@ AI Agent startups, AI SaaS products, indie AI tools. We do not work with e-comme
 
 ## How to contact
 
-Email: contact@startpoint.ai
+Email: contact@mistai.ai
 Contact form: ${SITE_URL}/contact
 Response time: within 24 hours on weekdays.
 `;

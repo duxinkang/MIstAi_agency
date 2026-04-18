@@ -16,12 +16,12 @@ export async function generateMetadata({
     locale,
     title:
       locale === "zh"
-        ? "合作模式与价格 — StartPoint 三档 AI Agent 增长方案"
-        : "Engagement tiers & pricing — StartPoint 0→1 growth for AI",
+        ? "合作模式与价格 — MIST Ai 三档 AI Agent 增长方案"
+        : "Engagement tiers & pricing — MIST Ai 0→1 growth for AI",
     description:
       locale === "zh"
-        ? "StartPoint 提供三档合作方案：战略问诊 ¥15,000（2-3 周）、轻量陪跑 ¥30-50k/月、完整陪跑 ¥80-120k/月 + 10-20% 增长利润分成。按 AI Agent 产品阶段灵活升级组合。"
-        : "Three StartPoint engagement tiers: Strategy Diagnosis (¥15k), Lite Partnership (¥30-50k/mo) and Full Growth with 10-20% revenue share (¥80-120k/mo). Scoped to your AI product stage.",
+        ? "MIST Ai 提供三档合作方案：战略问诊 ¥15,000（2-3 周）、轻量陪跑 ¥30-50k/月、完整陪跑 ¥80-120k/月 + 10-20% 增长利润分成。按 AI Agent 产品阶段灵活升级组合。"
+        : "Three MIST Ai engagement tiers: Strategy Diagnosis (¥15k), Lite Partnership (¥30-50k/mo) and Full Growth with 10-20% revenue share (¥80-120k/mo). Scoped to your AI product stage.",
     path: "/pricing",
   });
 }
@@ -60,13 +60,13 @@ export default async function PricingPage({
           <Pill variant="orange" size="md" className="mb-6">
             {nav("pricing")}
           </Pill>
-          <h1 className="sp-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] max-w-4xl text-ink">
+          <h1 className="sp-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] max-w-4xl text-[#E8F0FF]">
             {t("title")}
           </h1>
-          <p className="mt-6 max-w-3xl text-lg md:text-xl text-ink/75 leading-relaxed">
+          <p className="mt-6 max-w-3xl text-lg md:text-xl text-white/70 leading-relaxed">
             {locale === "zh"
               ? "按阶段、按深度灵活组合。从一次性战略问诊到深度绑定的增长陪跑，三档方案覆盖 AI 产品 0→1 的全路径。"
-              : "Flexible by stage and depth. From a single strategy workshop to deep revenue-share growth partnership — three tiers scoped to your 0→1 journey."}
+              : "Flexible by stage and depth. From a single strategy workshop to a deep revenue-share growth engagement, these three tiers are scoped to your 0→1 journey."}
           </p>
         </Container>
       </Section>
@@ -82,13 +82,13 @@ export default async function PricingPage({
                   key={plan.key}
                   className={
                     isFeatured
-                      ? "relative rounded-3xl bg-ink text-white p-8 md:p-10 shadow-2xl md:scale-[1.03] border-2 border-orange-500"
-                      : "relative rounded-3xl bg-white text-ink p-8 md:p-10 border border-ink/10 shadow-sm"
+                      ? "relative rounded-3xl bg-[#0A1E3F] text-white p-8 md:p-10 shadow-2xl md:scale-[1.03] border-2 border-[#00E676]"
+                      : "relative rounded-3xl bg-[#0D1830] text-[#E8F0FF] p-8 md:p-10 border border-white/8"
                   }
                 >
                   {isFeatured && (
                     <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                      <span className="bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full tracking-wider">
+                      <span className="bg-[#00E676] text-[#030810] text-xs font-bold px-3 py-1 rounded-full tracking-wider">
                         {locale === "zh" ? "最受欢迎" : "MOST POPULAR"}
                       </span>
                     </div>
@@ -98,8 +98,8 @@ export default async function PricingPage({
                     <div
                       className={
                         isFeatured
-                          ? "w-12 h-12 rounded-xl bg-orange-500 text-2xl flex items-center justify-center"
-                          : "w-12 h-12 rounded-xl bg-orange-50 text-2xl flex items-center justify-center"
+                          ? "w-12 h-12 rounded-xl bg-[#00E676] text-2xl flex items-center justify-center"
+                          : "w-12 h-12 rounded-xl bg-[#00E676]/10 text-2xl flex items-center justify-center"
                       }
                     >
                       {plan.icon}
@@ -107,8 +107,8 @@ export default async function PricingPage({
                     <div
                       className={
                         isFeatured
-                          ? "text-xs font-bold tracking-wider text-orange-300"
-                          : "text-xs font-bold tracking-wider text-orange-600"
+                          ? "text-xs font-bold tracking-wider text-[#00E676]"
+                          : "text-xs font-bold tracking-wider text-[#00E676]/70"
                       }
                     >
                       {`0${i + 1}`}
@@ -116,13 +116,13 @@ export default async function PricingPage({
                   </div>
 
                   <h3
-                    className={`sp-display text-3xl leading-tight ${isFeatured ? "text-white" : "text-ink"}`}
+                    className={`sp-display text-3xl leading-tight ${isFeatured ? "text-white" : "text-[#E8F0FF]"}`}
                   >
                     {plan.title}
                   </h3>
 
                   <p
-                    className={`mt-4 leading-relaxed text-[15px] ${isFeatured ? "text-white/80" : "text-ink/70"}`}
+                    className={`mt-4 leading-relaxed text-[15px] ${isFeatured ? "text-white/80" : "text-white/65"}`}
                   >
                     {plan.text}
                   </p>
@@ -135,7 +135,7 @@ export default async function PricingPage({
                         className={
                           isFeatured
                             ? "text-xs font-semibold px-3 py-1.5 rounded-full bg-white/10 border border-white/20"
-                            : "text-xs font-semibold px-3 py-1.5 rounded-full bg-ink/5 border border-ink/10"
+                            : "text-xs font-semibold px-3 py-1.5 rounded-full bg-white/5 border border-white/10"
                         }
                       >
                         {b}
@@ -148,13 +148,13 @@ export default async function PricingPage({
                     className={
                       isFeatured
                         ? "my-6 border-t border-white/15"
-                        : "my-6 border-t border-ink/10"
+                        : "my-6 border-t border-white/8"
                     }
                   />
 
                   {/* Footer line */}
                   <p
-                    className={`text-sm leading-relaxed ${isFeatured ? "text-orange-300 font-semibold" : "text-ink/60"}`}
+                    className={`text-sm leading-relaxed ${isFeatured ? "text-[#00E676] font-semibold" : "text-white/55"}`}
                   >
                     {plan.footer}
                   </p>
@@ -176,7 +176,7 @@ export default async function PricingPage({
           </div>
 
           {/* Footnote */}
-          <div className="mt-14 max-w-3xl text-center mx-auto text-ink/60 text-sm leading-relaxed">
+          <div className="mt-14 max-w-3xl text-center mx-auto text-white/50 text-sm leading-relaxed">
             {locale === "zh"
               ? "三档方案可灵活升级 / 组合。战略问诊费用可抵扣后续陪跑首月。完整陪跑的利润分成区间为 10-20%（按 MRR 增量或净利润增量计算），具体比例按产品阶段与增长目标一对一商定。"
               : "Tiers can be combined or upgraded. Strategy diagnosis fee is credited toward the first month of any ongoing engagement. Full-tier profit share ranges from 10-20% of incremental MRR or net profit — the exact figure is negotiated per stage and target KPIs."}
@@ -194,7 +194,7 @@ export default async function PricingPage({
             <Pill variant="orange" size="md" className="mb-5">
               {locale === "zh" ? "怎么选档位" : "How to pick a tier"}
             </Pill>
-            <h2 className="sp-display text-3xl md:text-4xl lg:text-5xl leading-[1.08] text-ink">
+            <h2 className="sp-display text-3xl md:text-4xl lg:text-5xl leading-[1.08] text-[#E8F0FF]">
               {locale === "zh"
                 ? "按风险偏好与增长目标，而不是按预算"
                 : "Pick by risk appetite and growth target, not by budget"}
@@ -234,25 +234,25 @@ export default async function PricingPage({
             ).map((item) => (
               <article
                 key={item.t}
-                className="rounded-3xl bg-white border border-ink/10 p-7 shadow-sm"
+                className="rounded-3xl bg-[#0D1830] border border-white/8 p-7"
               >
-                <h3 className="sp-display text-xl md:text-2xl text-ink leading-snug">
+                <h3 className="sp-display text-xl md:text-2xl text-[#E8F0FF] leading-snug">
                   {item.t}
                 </h3>
-                <p className="mt-3 text-ink/75 leading-relaxed text-[15px]">
+                <p className="mt-3 text-white/65 leading-relaxed text-[15px]">
                   {item.b}
                 </p>
               </article>
             ))}
           </div>
 
-          <div className="mt-12 max-w-3xl rounded-2xl bg-cream border border-ink/10 p-7 md:p-8">
-            <h3 className="sp-display text-xl md:text-2xl text-ink mb-3">
+          <div className="mt-12 max-w-3xl rounded-2xl bg-[#0A1428] border border-[#2979FF]/20 p-7 md:p-8">
+            <h3 className="sp-display text-xl md:text-2xl text-[#E8F0FF] mb-3">
               {locale === "zh"
                 ? "利润分成到底怎么算？"
                 : "How does the profit share actually work?"}
             </h3>
-            <p className="text-ink/75 leading-relaxed">
+            <p className="text-white/65 leading-relaxed">
               {locale === "zh"
                 ? "分成标的在 kickoff 阶段就用书面形式锁定，通常是 MRR 增量（月度订阅收入相对基线的净增长）或产品净利润增量。比例 10-20% 根据产品阶段、预期波动度与 CAC 回收周期一对一协商。战略问诊的一次性费用可在后续升级到轻量 / 完整陪跑时抵扣首月服务费。"
                 : "The share base is locked in writing at kickoff — typically incremental MRR (month-over-month net growth over a baseline) or incremental net profit. The 10-20% figure is negotiated per product stage, expected volatility, and CAC-payback window. The Strategy Diagnosis fee is credited against month one if you upgrade to Lite or Full later."}

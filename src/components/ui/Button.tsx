@@ -7,10 +7,13 @@ type Size = "sm" | "md" | "lg";
 
 const variants: Record<Variant, string> = {
   primary:
-    "bg-orange-500 text-white hover:bg-orange-600 shadow-sm active:scale-[0.98]",
-  ink: "bg-ink text-white hover:bg-orange-500",
-  ghost: "bg-transparent text-ink hover:bg-ink/5",
-  outline: "bg-transparent text-ink border border-ink/20 hover:border-ink/60",
+    "bg-[#00E676] text-[#030810] hover:bg-[#00C853] shadow-[0_0_24px_rgba(0,230,118,0.3)] active:scale-[0.98]",
+  ink:
+    "bg-[#0D1830] text-[#E8F0FF] border border-white/15 hover:border-[#00E676]/50 hover:text-[#00E676]",
+  ghost:
+    "bg-transparent text-[#E8F0FF] hover:bg-white/5",
+  outline:
+    "bg-transparent text-[#E8F0FF] border border-white/25 hover:border-white/50 hover:bg-white/5",
 };
 const sizes: Record<Size, string> = {
   sm: "text-sm px-4 py-2",
@@ -45,7 +48,6 @@ export function Button({
   );
 
   if (href) {
-    // Hash-only links stay in-page — skip next-intl Link to avoid locale prefixing.
     const isHash = typeof href === "string" && href.startsWith("#");
     if (external || isHash) {
       return (

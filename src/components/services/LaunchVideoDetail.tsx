@@ -51,11 +51,11 @@ export function LaunchVideoDetail() {
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 className="space-y-4"
               >
-                <div className="text-orange-500 font-bold text-xl">
+                <div className="text-[#00E676] font-bold text-xl">
                   0{i + 1}
                 </div>
-                <h2 className="sp-display text-2xl text-ink">{step.title}</h2>
-                <p className="text-ink/80 leading-relaxed">{step.text}</p>
+                <h2 className="sp-display text-2xl text-[#E8F0FF]">{step.title}</h2>
+                <p className="text-white/75 leading-relaxed">{step.text}</p>
               </motion.div>
             ))}
           </div>
@@ -65,7 +65,7 @@ export function LaunchVideoDetail() {
       <Section bg="cream">
         <Container size="full">
           <h2 className="sp-display text-3xl md:text-4xl mb-10">
-            <span className="text-orange-500">Client cases</span>
+            <span className="text-[#00E676]">Client cases</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {cases.map((c, i) => (
@@ -84,10 +84,10 @@ function CaseCard({ c, index }: { c: Case; index: number }) {
 
   const gradient =
     index === 0
-      ? "linear-gradient(135deg, #FFD9B8, #F5551D)"
+      ? "linear-gradient(135deg, #004D40, #00E676)"
       : index === 1
-        ? "linear-gradient(135deg, #1A1A1A, #5C4BD1)"
-        : "linear-gradient(135deg, #FFB88A, #C2380B)";
+        ? "linear-gradient(135deg, #0A1E3F, #2979FF)"
+        : "linear-gradient(135deg, #00BFA5, #00897B)";
 
   return (
     <motion.div
@@ -95,7 +95,7 @@ function CaseCard({ c, index }: { c: Case; index: number }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="rounded-2xl overflow-hidden bg-white border border-ink/10 flex flex-col shadow-sm"
+      className="rounded-2xl overflow-hidden bg-[#0D1830] border border-white/10 flex flex-col"
     >
       {/* Video / thumbnail area */}
       <div
@@ -136,7 +136,7 @@ function CaseCard({ c, index }: { c: Case; index: number }) {
                   className="drop-shadow-xl transition-transform group-hover:scale-110 relative z-[2]"
                 >
                   <circle cx="24" cy="24" r="24" fill="white" fillOpacity="0.95" />
-                  <path d="M20 16l14 8-14 8V16z" fill="#F5551D" />
+                  <path d="M20 16l14 8-14 8V16z" fill="#00E676" />
                 </svg>
               </button>
             )}
@@ -162,7 +162,7 @@ function CaseCard({ c, index }: { c: Case; index: number }) {
             aria-hidden="true"
           >
             <circle cx="24" cy="24" r="24" fill="white" fillOpacity="0.9" />
-            <path d="M20 16l14 8-14 8V16z" fill="#F5551D" />
+            <path d="M20 16l14 8-14 8V16z" fill="#00E676" />
           </svg>
         )}
       </div>
@@ -171,10 +171,10 @@ function CaseCard({ c, index }: { c: Case; index: number }) {
         <Pill variant="soft" size="sm" className="self-start mb-3">
           {c.brand}
         </Pill>
-        <h4 className="font-bold text-ink text-base leading-snug">
+        <h4 className="font-bold text-[#E8F0FF] text-base leading-snug">
           {c.headline}
         </h4>
-        <p className="mt-3 text-sm text-ink/70 leading-relaxed">{c.metric}</p>
+        <p className="mt-3 text-sm text-white/60 leading-relaxed">{c.metric}</p>
       </div>
     </motion.div>
   );

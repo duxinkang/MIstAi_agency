@@ -1,17 +1,10 @@
 "use client";
 
-import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { Container, Section } from "@/components/ui/Container";
 import { Pill } from "@/components/ui/Pill";
 
-/**
- * P15 — 团队 (Team)
- * 3 founder/partner cards with real photos.
- * Drop JPG/PNG under /public/team/<firstname>.jpg — falls back to gradient+initial if missing.
- */
 export function Team() {
   const t = useTranslations("team");
   const members = t.raw("members") as {
@@ -22,95 +15,84 @@ export function Team() {
   }[];
 
   return (
-    <Section bg="paper">
-      <Container size="full">
-        <div className="max-w-3xl mb-14">
-          <Pill variant="orange" size="md" className="mb-5">
-            TEAM
-          </Pill>
-          <h2 className="sp-display text-4xl md:text-5xl lg:text-6xl text-ink leading-tight">
-            {t("title")}
-          </h2>
-          <p className="mt-5 text-lg text-ink/70 leading-relaxed">
-            {t("subtitle")}
-          </p>
-          <p className="mt-3 text-ink/60 leading-relaxed">
-            {t("description")}
-          </p>
+    <Section bg="bone" className="!py-0">
+      <Container size="full" className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr]">
+        {/* Left panel */}
+        <div className="relative overflow-hidden px-8 py-16 md:px-12 lg:px-16 lg:py-24 bg-gradient-to-br from-[#0A1E3F] via-[#0D2850] to-[#071830]">
+          <div
+            aria-hidden="true"
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              background:
+                "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(41,121,255,0.15) 0%, transparent 70%)",
+            }}
+          />
+          <div className="relative">
+            <Pill variant="soft" size="md" className="mb-6">
+              TEAM
+            </Pill>
+            <p className="text-xl md:text-2xl text-white/60">{t("subtitle")}</p>
+            <h2 className="sp-display mt-6 text-5xl md:text-7xl leading-[0.95] text-[#E8F0FF]">
+              您的增长
+              <br />
+              合伙人
+            </h2>
+            <p className="mt-8 max-w-md text-base md:text-lg leading-relaxed text-white/60">
+              {t("description")}
+            </p>
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-          {members.map((m, i) => (
-            <motion.div
-              key={m.name}
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group rounded-3xl bg-white border border-ink/8 overflow-hidden shadow-sm hover:shadow-xl transition-shadow"
-            >
-              <MemberPhoto name={m.name} role={m.role} />
+        {/* Right panel */}
+        <div className="bg-[#0D1830] px-8 py-16 md:px-12 lg:px-16 lg:py-24 border-t lg:border-t-0 lg:border-l border-white/8">
+          <div className="border-b border-white/10 pb-8">
+            <h3 className="sp-display max-w-3xl text-4xl md:text-5xl leading-[1.1] text-[#E8F0FF]">
+              AI 懂技术，
+              <br />
+              但 0→1 的增长，仍然需要人
+            </h3>
+          </div>
 
-              {/* Info */}
-              <div className="p-6 md:p-7">
-                <h3 className="sp-display text-2xl text-ink">{m.name}</h3>
-                <div className="mt-1 text-sm font-semibold text-orange-600">
-                  {m.title}
+          <div className="mt-10 space-y-5">
+            {members.map((m, i) => (
+              <motion.article
+                key={m.name}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-60px" }}
+                transition={{ duration: 0.45, delay: i * 0.08 }}
+                className="grid grid-cols-1 gap-4 rounded-[32px] border border-white/10 bg-[#060D1C]/60 px-5 py-5 md:grid-cols-[220px_1fr] md:items-center md:px-6"
+              >
+                <div className="inline-flex items-center justify-center rounded-full border-2 border-[#2979FF]/40 bg-[#2979FF]/15 px-5 py-4 text-center">
+                  <div>
+                    <div className="text-sm font-semibold tracking-[0.12em] text-white/70">
+                      {m.name}
+                    </div>
+                    <div className="sp-display mt-1 text-2xl text-[#E8F0FF]">
+                      {m.role}
+                    </div>
+                  </div>
                 </div>
-                <p className="mt-4 text-ink/70 leading-relaxed text-[15px]">
-                  {m.text}
-                </p>
-              </div>
-            </motion.div>
-          ))}
+
+                <div className="pr-1">
+                  <div className="text-xl md:text-2xl font-semibold tracking-tight text-[#E8F0FF]">
+                    {m.title}
+                  </div>
+                  <p className="mt-2 text-[15px] md:text-base leading-relaxed text-white/60">
+                    {m.text}
+                  </p>
+                </div>
+              </motion.article>
+            ))}
+          </div>
+
+          <div className="mt-10 flex items-center gap-4 text-sm text-white/35">
+            <span className="h-px flex-1 bg-white/10" />
+            <span>覆盖 AI Agent 从 0 → 1 的关键 3 个断点</span>
+            <span className="h-px flex-1 bg-white/10" />
+          </div>
         </div>
       </Container>
     </Section>
-  );
-}
-
-function MemberPhoto({ name, role }: { name: string; role: string }) {
-  const src = `/team/${name.toLowerCase().replace(/\s+/g, "-")}.jpg`;
-  const [failed, setFailed] = useState(false);
-  const initial = name.charAt(0).toUpperCase();
-
-  return (
-    <div className="relative aspect-[4/5] bg-gradient-to-br from-orange-300 via-orange-400 to-amber-500 overflow-hidden">
-      {!failed && (
-        // Explicit width/height (instead of `fill`) so Next.js emits concrete
-        // width/height attributes on the <img> — helps CLS and satisfies the
-        // SEO audit that flagged missing intrinsic dimensions on /about.
-        <Image
-          src={src}
-          alt={`${name} — ${role}, StartPoint`}
-          width={400}
-          height={500}
-          sizes="(min-width: 768px) 33vw, 100vw"
-          className="absolute inset-0 h-full w-full object-cover transition-transform group-hover:scale-[1.03]"
-          onError={() => setFailed(true)}
-        />
-      )}
-
-      {failed && (
-        <>
-          {/* Decorative dot matrix for texture when no photo */}
-          <div className="sp-dot-matrix absolute inset-0 opacity-25" />
-          <div className="sp-ball absolute -right-10 -bottom-10 w-48 h-48 opacity-50 mix-blend-overlay" />
-          {/* Big initial */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <span className="sp-display text-[180px] leading-none text-white/90 drop-shadow-xl">
-              {initial}
-            </span>
-          </div>
-        </>
-      )}
-
-      <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
-      <div className="absolute bottom-4 left-5">
-        <span className="bg-orange-500 text-white text-xs font-bold px-2.5 py-1 rounded-full">
-          {role}
-        </span>
-      </div>
-    </div>
   );
 }

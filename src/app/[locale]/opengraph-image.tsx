@@ -7,7 +7,7 @@ export const runtime = "edge";
 export const contentType = "image/png";
 export const size = { width: 1200, height: 630 };
 
-export const alt = "StartPoint — 只做 AI Agent 的 0→1 增长";
+export const alt = "MIST Ai — 只做 AI Agent 的 0→1 增长";
 
 export default async function OpengraphImage({
   params,
@@ -68,7 +68,7 @@ export default async function OpengraphImage({
               letterSpacing: -1,
             }}
           >
-            StartPoint
+            MIST Ai
           </div>
           <div
             style={{
@@ -77,7 +77,7 @@ export default async function OpengraphImage({
               marginLeft: 6,
             }}
           >
-            起始点
+            迷雾智能
           </div>
         </div>
 
@@ -121,7 +121,7 @@ export default async function OpengraphImage({
             opacity: 0.9,
           }}
         >
-          <div style={{ fontWeight: 700 }}>startpointagency.com</div>
+          <div style={{ fontWeight: 700 }}>mistaiagency.com</div>
           <div>Hangzhou · Shanghai · Paris</div>
         </div>
       </div>

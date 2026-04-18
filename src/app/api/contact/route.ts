@@ -10,10 +10,10 @@ import { NextResponse } from "next/server";
  *
  * Env vars expected on Vercel:
  *   RESEND_API_KEY       — get one free at resend.com/api-keys (3k/mo free tier)
- *   CONTACT_NOTIFY_EMAIL — where submissions land (default: contact@startpoint.ai)
+ *   CONTACT_NOTIFY_EMAIL — where submissions land (default: contact@mistai.ai)
  *   CONTACT_FROM_EMAIL   — sender (default: onboarding@resend.dev for testing;
- *                         after you verify startpointagency.com on Resend, switch
- *                         to contact@startpointagency.com for better deliverability)
+ *                         after you verify mistaiagency.com on Resend, switch
+ *                         to contact@mistaiagency.com for better deliverability)
  *   CONTACT_FORWARD_URL  — optional webhook as a secondary/backup sink
  */
 
@@ -74,9 +74,9 @@ export async function POST(req: Request) {
   const deliveries: string[] = [];
   const failures: string[] = [];
 
-  const subject = `[StartPoint] ${name} · ${company} (${stage})`;
+  const subject = `[MIST Ai] ${name} · ${company} (${stage})`;
   const plainBody = [
-    `New inquiry from startpointagency.com/contact`,
+    `New inquiry from mistaiagency.com/contact`,
     ``,
     `Name:     ${name}`,
     `Email:    ${email}`,
@@ -93,11 +93,11 @@ export async function POST(req: Request) {
   // 1. Resend ---------------------------------------------------------
   const resendKey = process.env.RESEND_API_KEY;
   if (resendKey) {
-    const to = process.env.CONTACT_NOTIFY_EMAIL || "contact@startpoint.ai";
+    const to = process.env.CONTACT_NOTIFY_EMAIL || "contact@mistai.ai";
     const from =
       process.env.CONTACT_FROM_EMAIL ||
       // Resend's universal testing sender — works before your domain is verified.
-      "StartPoint <onboarding@resend.dev>";
+      "MIST Ai <onboarding@resend.dev>";
 
     try {
       const r = await fetch("https://api.resend.com/emails", {
@@ -135,7 +135,7 @@ export async function POST(req: Request) {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          source: "startpointagency.com/contact",
+          source: "mistaiagency.com/contact",
           ...data,
           receivedAt: new Date().toISOString(),
         }),

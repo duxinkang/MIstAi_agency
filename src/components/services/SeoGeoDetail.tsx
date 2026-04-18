@@ -30,13 +30,13 @@ export function SeoGeoDetail() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.4, delay: i * 0.08 }}
-              className="rounded-2xl bg-white border border-ink/10 p-8 shadow-sm"
+              className="rounded-2xl bg-[#0D1830] border border-white/10 p-8"
             >
-              <div className="text-orange-500 font-bold text-lg mb-3">
+              <div className="text-[#00E676] font-bold text-lg mb-3">
                 0{i + 1}
               </div>
-              <h3 className="sp-display text-2xl text-ink">{step.title}</h3>
-              <p className="mt-4 text-ink/75 leading-relaxed">{step.text}</p>
+              <h3 className="sp-display text-2xl text-[#E8F0FF]">{step.title}</h3>
+              <p className="mt-4 text-white/65 leading-relaxed">{step.text}</p>
             </motion.div>
           ))}
         </div>

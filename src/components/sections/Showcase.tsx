@@ -190,8 +190,8 @@ function ShowcaseCard({ c, index }: { c: Case; index: number }) {
             />
 
             {/* Accent badge top-left */}
-            <span className="absolute top-5 left-5 flex items-center gap-2 rounded-full bg-white/95 backdrop-blur px-3.5 py-1.5 text-xs font-bold text-ink shadow-md z-10">
-              <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse" />
+            <span className="absolute top-5 left-5 flex items-center gap-2 rounded-full bg-[#030810]/90 backdrop-blur px-3.5 py-1.5 text-xs font-bold text-white shadow-md z-10">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#00E676] animate-pulse" />
               {video.accent}
             </span>
 
@@ -208,7 +208,7 @@ function ShowcaseCard({ c, index }: { c: Case; index: number }) {
                   fill="none"
                   className="translate-x-0.5"
                 >
-                  <path d="M16 12l22 12-22 12V12z" fill="#F5551D" />
+                  <path d="M16 12l22 12-22 12V12z" fill="#00E676" />
                 </svg>
               </span>
             </span>

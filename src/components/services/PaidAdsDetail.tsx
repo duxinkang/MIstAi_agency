@@ -23,13 +23,13 @@ export function PaidAdsDetail() {
             <Pill variant="orange" size="md">
               {t("kicker")} · CHANNELS
             </Pill>
-            <div className="h-px flex-1 bg-ink/15" />
+            <div className="h-px flex-1 bg-white/15" />
           </div>
           <div className="flex flex-wrap gap-3">
             {channels.map((ch) => (
               <span
                 key={ch}
-                className="rounded-full border-2 border-ink px-5 py-2.5 font-semibold text-ink bg-white"
+                className="rounded-full border border-[#00E676]/40 px-5 py-2.5 font-semibold text-[#00E676] bg-[#0D1830]"
               >
                 {ch}
               </span>
@@ -44,7 +44,7 @@ export function PaidAdsDetail() {
             <Pill variant="ink" size="md">
               METHODOLOGY
             </Pill>
-            <div className="h-px flex-1 bg-ink/15" />
+            <div className="h-px flex-1 bg-white/15" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {methodology.map((m, i) => (
@@ -54,13 +54,13 @@ export function PaidAdsDetail() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.4, delay: i * 0.08 }}
-                className="rounded-2xl bg-white border border-ink/10 p-6 shadow-sm"
+                className="rounded-2xl bg-[#0D1830] border border-white/10 p-6"
               >
-                <div className="text-orange-500 font-bold text-sm mb-2">
+                <div className="text-[#00E676] font-bold text-sm mb-2">
                   0{i + 1}
                 </div>
-                <h3 className="font-bold text-ink text-lg">{m.title}</h3>
-                <p className="mt-3 text-sm text-ink/75 leading-relaxed">
+                <h3 className="font-bold text-[#E8F0FF] text-lg">{m.title}</h3>
+                <p className="mt-3 text-sm text-white/65 leading-relaxed">
                   {m.text}
                 </p>
               </motion.div>
@@ -75,7 +75,7 @@ export function PaidAdsDetail() {
             <Pill variant="orange" size="md">
               OUTCOMES
             </Pill>
-            <div className="h-px flex-1 bg-ink/15" />
+            <div className="h-px flex-1 bg-white/15" />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             {goals.map((g, i) => (
@@ -85,14 +85,14 @@ export function PaidAdsDetail() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.4, delay: i * 0.05 }}
-                className="flex gap-4 items-start bg-cream rounded-xl p-5"
+                className="flex gap-4 items-start bg-[#0A1428] rounded-xl p-5"
               >
-                <div className="shrink-0 w-9 h-9 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold">
+                <div className="shrink-0 w-9 h-9 rounded-full bg-[#00E676] text-[#030810] flex items-center justify-center font-bold">
                   {i + 1}
                 </div>
                 <div>
-                  <div className="font-bold text-ink">{g.title}</div>
-                  <div className="text-sm text-ink/70 mt-1">{g.text}</div>
+                  <div className="font-bold text-[#E8F0FF]">{g.title}</div>
+                  <div className="text-sm text-white/60 mt-1">{g.text}</div>
                 </div>
               </motion.div>
             ))}
@@ -104,12 +104,12 @@ export function PaidAdsDetail() {
             shops. */}
         <div className="mt-20 grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-10 items-start">
           <div>
-            <h2 className="sp-display text-2xl md:text-3xl text-ink leading-tight">
+            <h2 className="sp-display text-2xl md:text-3xl text-[#E8F0FF] leading-tight">
               {isZh
                 ? "为什么 AI Agent 的广告投放不能照搬 SaaS 打法"
                 : "Why AI Agent paid playbooks differ from standard SaaS"}
             </h2>
-            <div className="mt-5 space-y-4 text-ink/80 leading-relaxed">
+            <div className="mt-5 space-y-4 text-white/75 leading-relaxed">
               <p>
                 {isZh
                   ? "AI Agent 的用户决策路径比传统 SaaS 长。用户既要理解「这个 Agent 能替我做什么」，也要建立「它会不会把我的数据搞乱」的信任。这意味着冷人群几乎不可能在一次点击内转化，必须通过冷 / 温 / 热三层分层把信任一点点累积起来。我们的每一条素材都针对某一层的心智障碍，而不是对所有人讲同一句话。"
@@ -123,8 +123,8 @@ export function PaidAdsDetail() {
             </div>
           </div>
 
-          <div className="rounded-2xl bg-ink text-white/90 p-7 md:p-8">
-            <h3 className="sp-display text-xl md:text-2xl text-orange-300">
+          <div className="rounded-2xl bg-[#030810] text-white/90 p-7 md:p-8 border border-white/8">
+            <h3 className="sp-display text-xl md:text-2xl text-[#69F0AE]">
               {isZh ? "我们拒绝做什么" : "What we won\u2019t do"}
             </h3>
             <ul className="mt-5 space-y-4">
@@ -143,7 +143,7 @@ export function PaidAdsDetail() {
                   ]
               ).map((line) => (
                 <li key={line} className="flex gap-3 text-white/85 text-[15px] leading-relaxed">
-                  <span className="mt-1.5 shrink-0 w-1.5 h-1.5 rounded-full bg-orange-400" />
+                  <span className="mt-1.5 shrink-0 w-1.5 h-1.5 rounded-full bg-[#00E676]" />
                   <span>{line}</span>
                 </li>
               ))}

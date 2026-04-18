@@ -2,28 +2,31 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { Container, Section } from "@/components/ui/Container";
+import { Container } from "@/components/ui/Container";
 import { Pill } from "@/components/ui/Pill";
 
-/**
- * P3 — 您的增长合伙人
- * Warm yellow/orange gradient background.
- * Left: kicker + 您的增长合伙人 stacked title.
- * Right: 3 pillars (orange pills + black text).
- */
 export function Partner() {
   const t = useTranslations("partner");
   const pillars = t.raw("pillars") as { label: string; text: string }[];
 
   return (
     <section
-      className="relative overflow-hidden py-20 md:py-28 lg:py-32 text-ink"
+      className="relative overflow-hidden py-20 md:py-28 lg:py-32 text-[#E8F0FF]"
       style={{
         background:
-          "linear-gradient(100deg, #FFD29A 0%, #FFB266 50%, #FFE9CC 100%)",
+          "linear-gradient(135deg, #0A1428 0%, #0B1E3A 50%, #0A1428 100%)",
       }}
     >
-      <Container size="full">
+      {/* Subtle neon glow accents */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(ellipse 50% 60% at 0% 50%, rgba(0,230,118,0.06) 0%, transparent 70%), radial-gradient(ellipse 40% 50% at 100% 50%, rgba(41,121,255,0.06) 0%, transparent 70%)",
+        }}
+      />
+      <Container size="full" className="relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.3fr] gap-12 items-start">
           {/* Left */}
           <motion.div
@@ -32,10 +35,10 @@ export function Partner() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="text-lg md:text-xl text-ink/75 font-medium mb-4">
+            <div className="text-lg md:text-xl text-white/60 font-medium mb-4">
               {t("kicker")}
             </div>
-            <h2 className="sp-display text-5xl md:text-6xl lg:text-7xl leading-[1.05]">
+            <h2 className="sp-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-[#E8F0FF]">
               {t("headline").split(" ").map((word, i) => (
                 <span key={i} className="block">
                   {word}
@@ -53,10 +56,10 @@ export function Partner() {
             className="space-y-8"
           >
             <div>
-              <h3 className="sp-display text-3xl md:text-4xl lg:text-5xl leading-tight">
+              <h3 className="sp-display text-3xl md:text-4xl lg:text-5xl leading-tight text-[#E8F0FF]">
                 {t("title")}
               </h3>
-              <div className="mt-6 h-px bg-ink/40" />
+              <div className="mt-6 h-px bg-white/15" />
             </div>
 
             <ul className="space-y-5">
@@ -69,15 +72,15 @@ export function Partner() {
                   >
                     {p.label}
                   </Pill>
-                  <span className="text-base md:text-lg font-medium text-ink/90">
+                  <span className="text-base md:text-lg font-medium text-white/80">
                     {p.text}
                   </span>
                 </li>
               ))}
             </ul>
 
-            <div className="pt-6 border-t border-ink/20">
-              <p className="text-sm text-ink/70 text-center md:text-right">
+            <div className="pt-6 border-t border-white/12">
+              <p className="text-sm text-white/55 text-center md:text-right">
                 {t("footnote")}
               </p>
             </div>

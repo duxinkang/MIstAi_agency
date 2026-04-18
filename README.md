@@ -1,6 +1,6 @@
-# StartPoint Agency — website
+# Mistai Agency — website
 
-Bilingual (zh / en) marketing site for [StartPoint Agency](https://www.startpointagency.com) — the 1:1 web version of the PDF pitch deck.
+Bilingual (zh / en) marketing site for [Mistai Agency](https://www.mistaiagency.com) — the 1:1 web version of the PDF pitch deck.
 
 - **Framework:** Next.js 16 App Router + React 19 + TypeScript
 - **Styling:** Tailwind CSS v4 with custom design tokens (`sp-display`, `sp-ball`, `sp-dot-matrix`)
@@ -29,7 +29,7 @@ cp .env.local.example .env.local
 
 | Var | Purpose |
 |---|---|
-| `NEXT_PUBLIC_SITE_URL` | Canonical site URL (used in sitemap, OG meta, JSON-LD). Defaults to `https://www.startpointagency.com`. |
+| `NEXT_PUBLIC_SITE_URL` | Canonical site URL (used in sitemap, OG meta, JSON-LD). Defaults to `https://www.mistaiagency.com`. |
 | `NEXT_PUBLIC_SANITY_PROJECT_ID` | Set by `npx sanity init`. Required for the site (and Studio) to read/write Sanity content. |
 | `NEXT_PUBLIC_SANITY_DATASET` | Usually `production`. Set by `npx sanity init`. |
 | `CONTACT_FORWARD_URL` | Optional. Webhook that receives contact-form submissions (Zapier / Make / custom). |
@@ -195,7 +195,7 @@ npx vercel link      # once
 npx vercel --prod
 ```
 
-Set the env vars from the table above in Vercel project settings. DNS: point `startpointagency.com` at Vercel's nameservers.
+Set the env vars from the table above in Vercel project settings. DNS: point `mistaiagency.com` at Vercel's nameservers.
 
 ---
 

@@ -21,12 +21,12 @@ export async function generateMetadata({
     locale,
     title:
       locale === "zh"
-        ? "关于 StartPoint — 只做 AI Agent 0→1 增长的营销合伙人"
-        : "About StartPoint — A growth partner built exclusively for AI Agents",
+        ? "关于迷雾智能 MIST Ai — 只做 AI Agent 0→1 增长"
+        : "About MIST Ai — Built for AI Agent 0→1 growth",
     description:
       locale === "zh"
-        ? "StartPoint 是一支融合工程、增长与投资叙事的团队。我们只做一件事：帮 AI Agent 产品从 0 做到 1。不承接碎片化营销外包，只做与创始人共担风险的增长合伙人。团队覆盖杭州 / 上海 / 巴黎。"
-        : "StartPoint is a hybrid team fluent in engineering, growth, and investor narrative. We do one thing — 0→1 growth for AI Agents. Not fragmented outsourcing; a growth partner that shares the risk. Hangzhou, Shanghai, Paris.",
+        ? "迷雾智能 MIST Ai 是一支融合工程、增长与投资叙事的团队。我们只做一件事：帮 AI Agent 产品从 0 做到 1。不承接碎片化营销外包，而是直接进入增长现场，与创始人一起对结果负责。团队覆盖杭州 / 上海 / 巴黎。"
+        : "MIST Ai is a hybrid team fluent in engineering, growth, and investor narrative. We do one thing: 0→1 growth for AI Agents. Not fragmented outsourcing, but a hands-on growth team working alongside founders. Hangzhou, Shanghai, Paris.",
     path: "/about",
   });
 }
@@ -55,13 +55,13 @@ export default async function AboutPage({
           <Pill variant="orange" size="md" className="mb-6">
             {nav("about")}
           </Pill>
-          <h1 className="sp-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] max-w-4xl text-ink">
+          <h1 className="sp-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] max-w-4xl text-[#E8F0FF]">
             {t("hero.title")}
           </h1>
-          <p className="mt-6 max-w-3xl text-xl md:text-2xl text-ink/80 leading-relaxed">
+          <p className="mt-6 max-w-3xl text-xl md:text-2xl text-white/75 leading-relaxed">
             {t("hero.subtitle")}
           </p>
-          <p className="mt-4 max-w-3xl text-lg text-ink/65 leading-relaxed">
+          <p className="mt-4 max-w-3xl text-lg text-white/60 leading-relaxed">
             {t("hero.body")}
           </p>
         </Container>

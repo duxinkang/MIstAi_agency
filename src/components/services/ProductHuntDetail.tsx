@@ -19,9 +19,9 @@ export function ProductHuntDetail() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="rounded-3xl bg-ink text-white p-8 md:p-10"
+            className="rounded-3xl bg-[#030810] text-white p-8 md:p-10 border border-white/8"
           >
-            <h2 className="font-bold text-xl mb-6">
+            <h2 className="font-bold text-xl mb-6 text-[#00E676]">
               {/* keep key hardcoded to avoid a new i18n round-trip */}
               {t.raw("intro") ? "KEY OUTCOMES" : ""}
             </h2>
@@ -31,7 +31,7 @@ export function ProductHuntDetail() {
                   key={tg}
                   className="flex gap-3 text-white/90 leading-relaxed"
                 >
-                  <span className="text-orange-300 mt-1.5">•</span>
+                  <span className="text-[#69F0AE] mt-1.5">•</span>
                   <span>{tg}</span>
                 </li>
               ))}
@@ -49,12 +49,12 @@ export function ProductHuntDetail() {
                 transition={{ duration: 0.4, delay: i * 0.08 }}
                 className="flex gap-5 items-start"
               >
-                <div className="shrink-0 w-14 h-14 rounded-lg bg-orange-500 text-white flex items-center justify-center font-bold text-xl">
+                <div className="shrink-0 w-14 h-14 rounded-lg bg-[#00E676] text-[#030810] flex items-center justify-center font-bold text-xl">
                   0{i + 1}
                 </div>
                 <div>
-                  <h3 className="font-bold text-ink text-lg">{step.title}</h3>
-                  <p className="mt-2 text-ink/75 leading-relaxed">{step.text}</p>
+                  <h3 className="font-bold text-[#E8F0FF] text-lg">{step.title}</h3>
+                  <p className="mt-2 text-white/65 leading-relaxed">{step.text}</p>
                 </div>
               </motion.div>
             ))}

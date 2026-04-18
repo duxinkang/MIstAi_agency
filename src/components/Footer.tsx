@@ -15,26 +15,26 @@ export function Footer() {
   ] as const;
 
   return (
-    <footer className="bg-ink text-white/80 py-16">
+    <footer className="bg-[#030810] text-white/70 py-16 border-t border-white/8">
       <Container>
         <div className="flex flex-col md:flex-row md:items-start justify-between gap-10">
           <div className="max-w-sm space-y-4">
-            <Logo variant="light" size="md" />
-            <p className="text-sm text-white/60 leading-relaxed">
+            <Logo variant="dark" size="md" />
+            <p className="text-sm text-white/50 leading-relaxed">
               {t("site.description")}
             </p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-10">
             <div className="space-y-3">
-              <div className="text-xs uppercase tracking-widest text-white/40">
+              <div className="text-xs uppercase tracking-widest text-white/30">
                 Menu
               </div>
               {links.map((l) => (
                 <Link
                   key={l.href}
                   href={l.href}
-                  className="block text-sm hover:text-orange-300 transition"
+                  className="block text-sm hover:text-[#00E676] transition"
                 >
                   {l.label}
                 </Link>
@@ -42,36 +42,36 @@ export function Footer() {
             </div>
 
             <div className="space-y-3">
-              <div className="text-xs uppercase tracking-widest text-white/40">
+              <div className="text-xs uppercase tracking-widest text-white/30">
                 Contact
               </div>
               <a
-                href="mailto:contact@startpoint.ai"
-                className="block text-sm hover:text-orange-300 transition"
+                href="mailto:contact@mistai.ai"
+                className="block text-sm hover:text-[#00E676] transition"
               >
-                contact@startpoint.ai
+                contact@mistai.ai
               </a>
-              <div className="text-sm text-white/60">
+              <div className="text-sm text-white/50">
                 {t("contact.locations")}
               </div>
             </div>
           </div>
         </div>
 
-        <div className="mt-12 pt-6 border-t border-white/10 text-xs text-white/40 flex flex-col sm:flex-row justify-between gap-2">
+        <div className="mt-12 pt-6 border-t border-white/8 text-xs text-white/30 flex flex-col sm:flex-row justify-between gap-2">
           <span>{t("footer.rights")}</span>
           <div className="flex items-center gap-4">
             <Link
               href="/privacy"
-              className="hover:text-white/70"
+              className="hover:text-white/60"
             >
               {t("footer.privacy")}
             </Link>
             <a
-              href="https://www.startpointagency.com/"
-              className="hover:text-white/70"
+              href="https://www.mistaiagency.com/"
+              className="hover:text-white/60"
             >
-              www.startpointagency.com
+              www.mistaiagency.com
             </a>
           </div>
         </div>

@@ -5,11 +5,6 @@ import { motion } from "framer-motion";
 import { Container, Section } from "@/components/ui/Container";
 import { DotMatrix } from "@/components/brand/Decor";
 
-/**
- * P2 — AI Agent 的问题，不在技术，在 GTM
- * Single-column focused layout: big headline + 3 numbered pain points.
- * Cream background keeps it warm but distinct from the Hero paper.
- */
 export function Problem() {
   const t = useTranslations("problem");
   const items = t.raw("items") as { n: string; text: string }[];
@@ -20,7 +15,7 @@ export function Problem() {
       <DotMatrix
         cols={6}
         rows={6}
-        className="absolute top-10 right-10 text-ink/30 hidden md:block"
+        className="absolute top-10 right-10 text-white/12 hidden md:block"
       />
       <Container size="full">
         <motion.div
@@ -30,10 +25,10 @@ export function Problem() {
           transition={{ duration: 0.6 }}
           className="max-w-4xl"
         >
-          <h2 className="sp-display text-4xl md:text-5xl lg:text-6xl leading-[1.1]">
+          <h2 className="sp-display text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-[#E8F0FF]">
             {t("title")}
           </h2>
-          <div className="mt-8 h-px bg-ink/30" />
+          <div className="mt-8 h-px bg-white/15" />
         </motion.div>
 
         <motion.ul
@@ -46,12 +41,12 @@ export function Problem() {
           {items.map((it) => (
             <li
               key={it.n}
-              className="border-t-2 border-ink/80 pt-6 space-y-4"
+              className="border-t-2 border-[#00E676]/40 pt-6 space-y-4"
             >
-              <div className="sp-display text-orange-500 text-5xl md:text-6xl font-bold">
+              <div className="sp-display text-[#00E676] text-5xl md:text-6xl font-bold">
                 {it.n}
               </div>
-              <p className="text-lg md:text-xl text-ink/90 font-medium leading-relaxed">
+              <p className="text-lg md:text-xl text-[#E8F0FF]/85 font-medium leading-relaxed">
                 {it.text}
               </p>
             </li>

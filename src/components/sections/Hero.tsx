@@ -8,23 +8,22 @@ import { Container, Section } from "@/components/ui/Container";
 import { DoubleBall } from "@/components/brand/GradientBall";
 import { GridCircle, ArcLine, DotMatrix } from "@/components/brand/Decor";
 
-/**
- * P1 — The opening frame of the deck.
- * Layout: eyebrow pill → 起始点 / StartPoint display → tagline.
- * Right side: double gradient ball + grid circle, layered OVER a muted
- * Poly.app launch-video loop that ties the Hero to our actual client proof.
- * The video is decorative — autoplay + muted + loop + playsInline ensures it
- * works on iOS Safari and never blocks scroll. Desktop-only to keep mobile
- * data usage in check.
- */
 export function Hero() {
   const t = useTranslations("hero");
 
   return (
     <Section bg="paper" className="min-h-[calc(100vh-5rem)] flex items-center relative overflow-hidden">
-      {/* Decorative Poly video loop — desktop only. Acts as a warm-tinted
-          background behind the Hero; pointer-events-none so it never intercepts
-          clicks. Fades out on the edges via a radial mask for focus on the copy. */}
+      {/* Ambient neon glow — bottom-left green, top-right blue */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(ellipse 60% 50% at 10% 80%, rgba(0,230,118,0.08) 0%, transparent 70%), radial-gradient(ellipse 50% 40% at 90% 10%, rgba(41,121,255,0.08) 0%, transparent 70%)",
+        }}
+      />
+
+      {/* Decorative video loop — desktop only */}
       <video
         // eslint-disable-next-line jsx-a11y/media-has-caption
         src="/videos/poly.mp4"
@@ -35,7 +34,7 @@ export function Hero() {
         playsInline
         preload="metadata"
         aria-hidden="true"
-        className="hidden lg:block absolute inset-0 w-full h-full object-cover opacity-[0.18] pointer-events-none"
+        className="hidden lg:block absolute inset-0 w-full h-full object-cover opacity-[0.06] pointer-events-none"
         style={{
           maskImage:
             "radial-gradient(ellipse at center, black 35%, transparent 75%)",
@@ -52,20 +51,20 @@ export function Hero() {
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
             className="space-y-8"
           >
-            <Pill variant="ink" size="md" className="!px-5 !py-2 text-orange-300">
+            <Pill variant="soft" size="md" className="!px-5 !py-2">
               <span className="tracking-[0.15em]">{t("eyebrow")}</span>
             </Pill>
 
             <div className="space-y-2">
-              <h1 className="sp-display text-[15vw] sm:text-[11vw] lg:text-[7.5vw] xl:text-[120px]">
+              <h1 className="sp-display text-[15vw] sm:text-[11vw] lg:text-[7.5vw] xl:text-[120px] text-[#E8F0FF]">
                 {t("titleZh")}
               </h1>
-              <h2 className="sp-display text-[10vw] sm:text-[7vw] lg:text-[5vw] xl:text-[80px] text-ink/95">
+              <h2 className="sp-display text-[10vw] sm:text-[7vw] lg:text-[5vw] xl:text-[80px] text-[#E8F0FF]/90">
                 {t("titleEn")}
               </h2>
             </div>
 
-            <div className="flex items-start gap-3 text-ink/85 pt-2">
+            <div className="flex items-start gap-3 text-[#E8F0FF]/80 pt-2">
               <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
                 <circle
                   cx="14"
@@ -121,20 +120,20 @@ export function Hero() {
               <GridCircle size={120} />
             </motion.div>
 
-            {/* Dot matrix bottom-left of ball */}
+            {/* Dot matrix bottom-left */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.7 }}
-              className="absolute bottom-12 left-0 md:-left-8 text-ink z-10"
+              className="absolute bottom-12 left-0 md:-left-8 text-[#00E676]/30 z-10"
             >
               <DotMatrix cols={6} rows={5} />
             </motion.div>
           </div>
         </div>
 
-        {/* Decorative arc bottom-left corner */}
-        <div className="hidden md:block absolute -bottom-24 -left-20 text-ink/70 pointer-events-none">
+        {/* Decorative arc bottom-left */}
+        <div className="hidden md:block absolute -bottom-24 -left-20 text-[#00E676]/20 pointer-events-none">
           <ArcLine size={260} />
         </div>
       </Container>

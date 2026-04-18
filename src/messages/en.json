@@ -1,8 +1,8 @@
 {
   "site": {
-    "name": "StartPoint",
+    "name": "MIST Ai",
     "tagline": "0→1 Growth, built exclusively for AI Agents",
-    "description": "StartPoint is a growth partner focused on 0→1 traction for AI Agents and AI SaaS — GTM strategy, Product Hunt, Launch Video, KOL/KOC outreach, SEO/GEO, paid ads, and brand IP."
+    "description": "MIST Ai is focused on 0→1 growth for AI Agents and AI SaaS — GTM strategy, Product Hunt, Launch Video, KOL/KOC outreach, SEO/GEO, paid ads, and brand IP."
   },
   "nav": {
     "services": "Services",
@@ -14,8 +14,8 @@
   },
   "hero": {
     "eyebrow": "Let's Start",
-    "titleZh": "起始点",
-    "titleEn": "StartPoint",
+    "titleZh": "迷雾智能",
+    "titleEn": "MIST Ai",
     "subtitle": "0→1 Growth, built exclusively for AI Agents",
     "cta": "Get a free 30-min consult",
     "ctaSecondary": "Watch our work"
@@ -42,7 +42,7 @@
   },
   "partner": {
     "kicker": "Who we are",
-    "headline": "Your growth partner",
+    "headline": "Your 0→1 growth team",
     "title": "AI gets the code. But 0→1 growth still needs humans.",
     "pillars": [
       { "label": "Deep partnership", "text": "We own the outcome with you" },
@@ -161,9 +161,9 @@
   },
   "about": {
     "hero": {
-      "title": "About StartPoint",
+      "title": "About MIST Ai",
       "subtitle": "A hybrid team fluent in tech, growth, and investor narrative",
-      "body": "We do one thing: take AI Agent products from 0 to 1. Not fragmented marketing outsourcing — a growth partner that shares the risk."
+      "body": "We do one thing: take AI Agent products from 0 to 1. Not fragmented marketing outsourcing, but a hands-on growth team that shares the risk."
     },
     "story": {
       "eyebrow": "Founder story",
@@ -177,22 +177,22 @@
         {
           "year": "2024",
           "title": "A gap no one was filling",
-          "text": "When AI Agents started shipping, we noticed something obvious — traditional agencies didn't understand AI products, and AI engineering teams didn't understand global GTM. What was missing wasn't marketing outsourcing; it was a growth partner who sits beside the founder and owns the outcome."
+          "text": "When AI Agents started shipping, we noticed something obvious — traditional agencies didn't understand AI products, and AI engineering teams didn't understand global GTM. What was missing wasn't marketing outsourcing; it was a growth team that sits beside the founder and owns the outcome."
         },
         {
           "year": "2025",
-          "title": "StartPoint",
+          "title": "MIST Ai",
           "text": "We only take AI products. We don't do one-off projects — only 3-6 month deep engagements. Using the playbook we've already validated with Poly.app, Blockit AI, and Crunched, we help the next AI team make the jump from 0 to 1."
         }
       ],
       "quote": "We're not a 'marketing team' — we're the first co-founder-in-growth for every AI product we work with.",
-      "signature": "— The StartPoint founding team"
+      "signature": "— The MIST Ai founding team"
     }
   },
   "engine": {
     "title": "Our four-step growth engine",
     "subtitle": "From GTM launch to brand compounding",
-    "description": "Whether you're pre-launch, growing, or scaling, StartPoint matches strategy to stage — building lasting brand influence and user growth in global markets.",
+    "description": "Whether you're pre-launch, growing, or scaling, MIST Ai matches strategy to stage — building lasting brand influence and user growth in global markets.",
     "steps": [
       { "n": "1", "title": "Diagnose & strategize", "text": "Define GTM, nail the core value proposition" },
       { "n": "2", "title": "Launch loudly", "text": "Product Hunt run + Launch Video to ignite reach" },
@@ -224,7 +224,7 @@
     "eyebrow": "Featured case",
     "category": "B2B AI Agent · User interview platform",
     "title": "China's first AI-powered user interview platform: product, market, and funding — 0 to 1",
-    "subtitle": "StartPoint ran three parallel workstreams as this B2B AI Agent's core growth partner — product validation, market launch, and investor narrative.",
+    "subtitle": "MIST Ai ran three parallel workstreams as this B2B AI Agent's core growth team — product validation, market launch, and investor narrative.",
     "workstreamsTitle": "Three parallel workstreams",
     "workstreams": [
       {
@@ -265,13 +265,13 @@
       { "n": "40%", "label": "Engagement above industry avg" },
       { "n": "20+", "label": "Customer conversions" }
     ],
-    "quote": "StartPoint is our true early-stage growth partner. From how to sell and who to sell to, all the way to how we handle the capital markets — they delivered strategy and execution from end to end. The lead surge in week one is the clearest proof of what we built together.",
+    "quote": "MIST Ai is our true early-stage growth team. From how to sell and who to sell to, all the way to how we handle the capital markets — they delivered strategy and execution from end to end. The lead surge in week one is the clearest proof of what we built together.",
     "quoteBy": "— Founder of a B2B AI Agent product"
   },
   "internationalProjects": {
     "eyebrow": "International work",
     "title": "Not just AI — our 0→1 track record overseas",
-    "subtitle": "Before StartPoint, the founding team spent years on cross-border GTM — UK SaaS, French fintech, Spanish local services. That playbook is what we're now running for AI Agents.",
+    "subtitle": "Before MIST Ai, the founding team spent years on cross-border GTM — UK SaaS, French fintech, Spanish local services. That playbook is what we're now running for AI Agents.",
     "items": [
       {
         "flag": "🇬🇧",
@@ -301,9 +301,9 @@
     "visit": "Visit site"
   },
   "vs": {
-    "title": "Why StartPoint?",
+    "title": "Why MIST Ai?",
     "subtitle": "A more rational, agile, and certain path to growth",
-    "headline": "In-house team vs StartPoint",
+    "headline": "In-house team vs MIST Ai",
     "left": [
       { "title": "Slow start", "text": "Hiring + onboarding, 4-6 months before anything real happens" },
       { "title": "High cost", "text": "Ongoing headcount plus hidden spend on hiring, management, and false starts" },
@@ -331,7 +331,7 @@
   },
   "advantages": {
     "title": "Why we win",
-    "subtitle": "Six differentiators that make StartPoint the right growth partner for AI products",
+    "subtitle": "Six differentiators that make MIST Ai the right 0→1 growth team for AI products",
     "items": [
       { "title": "End-to-end AI/SaaS growth", "text": "GTM to scale under one roof — lifecycle coverage, no fragmented vendors" },
       { "title": "Local brand building", "text": "Deep grasp of East/West market differences — narrative and distribution that actually fit the target market" },
@@ -365,7 +365,7 @@
   "outro": {
     "title": "A more rational, agile, and certain path to growth",
     "body1": "For AI Agent teams in the 0→1 phase, every dollar and every day matters.",
-    "body2": "The DIY market-team route is full of uncertainty and hidden cost. Choosing StartPoint means choosing a validated path where our upside is tied to yours."
+    "body2": "The DIY market-team route is full of uncertainty and hidden cost. Choosing MIST Ai means choosing a validated path where our upside is tied to yours."
   },
   "pricing": {
     "title": "How we work",
@@ -400,7 +400,7 @@
     "title": "Talk to us",
     "subtitle": "Book a free 30-minute consult",
     "locations": "Hangzhou / Shanghai / Paris — happy to coffee chat in person",
-    "email": "contact@startpoint.ai",
+    "email": "contact@mistai.ai",
     "form": {
       "name": "Your name",
       "company": "Company / product",
@@ -410,11 +410,11 @@
       "submit": "Book the call",
       "submitting": "Submitting…",
       "success": "Got it. We'll reply to your email within 24 hours.",
-      "error": "Something went wrong. Email us directly at contact@startpoint.ai."
+      "error": "Something went wrong. Email us directly at contact@mistai.ai."
     }
   },
   "footer": {
-    "rights": "© 2026 StartPoint Agency · 0→1 growth for AI Agents",
+    "rights": "© 2026 MIST Ai · 0→1 growth for AI Agents",
     "language": "Language",
     "privacy": "Privacy"
   },

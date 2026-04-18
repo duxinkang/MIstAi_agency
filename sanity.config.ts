@@ -10,7 +10,7 @@ import { schemaTypes } from "./src/sanity/schemas";
 
 export default defineConfig({
   name: "default",
-  title: "StartPoint Studio",
+  title: "Mistai Studio",
   basePath: "/studio",
   projectId,
   dataset,

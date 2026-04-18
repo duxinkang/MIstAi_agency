@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://www.startpointagency.com";
+  process.env.NEXT_PUBLIC_SITE_URL || "https://www.mistaiagency.com";
 
-export const SITE_NAME = "StartPoint Agency";
+export const SITE_NAME = "MIST Ai";
 
 type BuildMetaArgs = {
   locale: string;
@@ -75,14 +75,14 @@ export function organizationSchema(locale: string) {
     "@type": "ProfessionalService",
     "@id": `${SITE_URL}#organization`,
     name: SITE_NAME,
-    alternateName: "StartPoint 起始点",
+    alternateName: "迷雾智能",
     url: SITE_URL,
     logo: `${SITE_URL}/logo.svg`,
     description:
       locale === "zh"
-        ? "StartPoint 是专注 AI Agent 与 SaaS 产品 0→1 增长的营销合作伙伴，覆盖 GTM 策略、Product Hunt、Launch Video、海外 KOL、SEO/GEO、广告投放与品牌沉淀。"
-        : "StartPoint is a growth partner focused on 0→1 traction for AI Agents and AI SaaS — GTM strategy, Product Hunt, Launch Video, KOL/KOC outreach, SEO/GEO, paid ads, and brand IP.",
-    email: "contact@startpoint.ai",
+        ? "迷雾智能 MIST Ai 专注 AI Agent 与 AI SaaS 产品的 0→1 增长，覆盖 GTM 策略、Product Hunt、Launch Video、海外 KOL、SEO/GEO、广告投放与品牌沉淀。"
+        : "MIST Ai is focused on 0→1 growth for AI Agents and AI SaaS — GTM strategy, Product Hunt, Launch Video, KOL/KOC outreach, SEO/GEO, paid ads, and brand IP.",
+    email: "contact@mistai.ai",
     areaServed: ["CN", "US", "EU", "JP", "SG", "Global"],
     address: [
       { "@type": "PostalAddress", addressLocality: "Hangzhou", addressCountry: "CN" },
@@ -174,4 +174,3 @@ export function breadcrumbSchema(
     })),
   };
 }
-

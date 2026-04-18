@@ -83,7 +83,7 @@ export async function generateMetadata({
   const suffix = TITLE_SUFFIX[slug][locale === "zh" ? "zh" : "en"];
   return buildMetadata({
     locale,
-    title: `${suffix} — StartPoint`,
+    title: `${suffix} — MIST Ai`,
     description: t("intro"),
     path: `/services/${slug}`,
   });
@@ -130,7 +130,7 @@ export default async function ServiceDetailPage({
           <h1 className="sp-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] max-w-4xl">
             {t("title")}
           </h1>
-          <p className="mt-8 max-w-3xl text-lg md:text-xl text-ink/80 leading-relaxed">
+          <p className="mt-8 max-w-3xl text-lg md:text-xl text-white/70 leading-relaxed">
             {t("intro")}
           </p>
         </Container>
@@ -172,21 +172,21 @@ function ServiceDetailCTA({
   return (
     <Section bg="ink" className="!py-20 md:!py-24">
       <Container size="full">
-        <div className="rounded-3xl bg-gradient-to-br from-[#1f1208] via-ink to-[#1a1a1a] border border-orange-500/20 p-8 md:p-12 lg:p-14 relative overflow-hidden">
-          {/* Decorative orange glow */}
+        <div className="rounded-3xl bg-gradient-to-br from-[#071830] via-[#030810] to-[#0A1428] border border-[#00E676]/20 p-8 md:p-12 lg:p-14 relative overflow-hidden">
+          {/* Decorative neon glow */}
           <div
             aria-hidden="true"
-            className="absolute -top-24 -right-24 w-96 h-96 rounded-full opacity-30 blur-3xl pointer-events-none"
+            className="absolute -top-24 -right-24 w-96 h-96 rounded-full opacity-25 blur-3xl pointer-events-none"
             style={{
               background:
-                "radial-gradient(circle, #F5551D 0%, transparent 70%)",
+                "radial-gradient(circle, #00E676 0%, transparent 70%)",
             }}
           />
 
           <div className="relative grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-10 lg:gap-14">
             {/* Left — headline + outcomes */}
             <div>
-              <div className="text-orange-400 text-xs font-bold tracking-[0.25em] uppercase mb-4">
+              <div className="text-[#00E676] text-xs font-bold tracking-[0.25em] uppercase mb-4">
                 {locale === "zh" ? "下一步" : "Next step"}
               </div>
               <h3 className="sp-display text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1]">
@@ -205,7 +205,7 @@ function ServiceDetailCTA({
                   >
                     <span
                       aria-hidden="true"
-                      className="mt-1.5 shrink-0 w-1.5 h-1.5 rounded-full bg-orange-500"
+                      className="mt-1.5 shrink-0 w-1.5 h-1.5 rounded-full bg-[#00E676]"
                     />
                     <span>{o}</span>
                   </li>

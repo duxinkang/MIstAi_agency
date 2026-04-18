@@ -17,7 +17,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "services" });
   return buildMetadata({
     locale,
-    title: `${t("indexTitle")} — StartPoint`,
+    title: `${t("indexTitle")} — MIST Ai`,
     description: t("indexDescription"),
     path: "/services",
   });
@@ -67,7 +67,7 @@ export default async function ServicesPage({
             <h1 className="sp-display text-5xl md:text-6xl lg:text-7xl leading-[1.05]">
               {idx("title")}
             </h1>
-            <p className="mt-6 text-lg md:text-xl text-ink/80 leading-relaxed">
+            <p className="mt-6 text-lg md:text-xl text-white/70 leading-relaxed">
               {idx("subtitle")}
             </p>
           </div>
@@ -85,18 +85,18 @@ export default async function ServicesPage({
               <Link
                 key={item.slug}
                 href={`/services/${item.slug}` as const}
-                className="group rounded-2xl border border-ink/10 bg-white p-8 hover:border-orange-500 hover:-translate-y-1 transition-all shadow-sm"
+                className="group rounded-2xl border border-white/8 bg-[#0D1830] p-8 hover:border-[#00E676]/40 hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(0,230,118,0.07)] transition-all"
               >
-                <div className="text-orange-500 text-xs font-bold uppercase tracking-widest mb-4">
+                <div className="text-[#00E676] text-xs font-bold uppercase tracking-widest mb-4">
                   {item.slug.replace("-", " / ")}
                 </div>
-                <h3 className="sp-display text-2xl leading-tight text-ink group-hover:text-orange-500 transition-colors">
+                <h3 className="sp-display text-2xl leading-tight text-[#E8F0FF] group-hover:text-[#00E676] transition-colors">
                   {item.title}
                 </h3>
-                <p className="mt-4 text-sm text-ink/75 leading-relaxed">
+                <p className="mt-4 text-sm text-white/60 leading-relaxed">
                   {item.short}
                 </p>
-                <div className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-orange-500">
+                <div className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[#00E676]">
                   {idx("cta")} →
                 </div>
               </Link>
@@ -120,16 +120,16 @@ export default async function ServicesPage({
               <Pill variant="orange" size="md" className="mb-5">
                 {locale === "zh" ? "服务逻辑" : "How services compose"}
               </Pill>
-              <h2 className="sp-display text-3xl md:text-4xl lg:text-5xl leading-[1.08] text-ink">
+              <h2 className="sp-display text-3xl md:text-4xl lg:text-5xl leading-[1.08] text-[#E8F0FF]">
                 {locale === "zh"
                   ? "六条产品线，同一套增长飞轮"
                   : "Six service lines, one growth flywheel"}
               </h2>
-              <div className="mt-6 space-y-5 text-ink/80 leading-relaxed text-[17px]">
+              <div className="mt-6 space-y-5 text-white/70 leading-relaxed text-[17px]">
                 <p>
                   {locale === "zh"
-                    ? "StartPoint 不做碎片化的营销外包。六条服务线是同一套 0→1 增长飞轮上的不同支点:Launch Video 负责在 15 秒内把价值主张讲清楚，Product Hunt 和 KOL 负责把首批种子用户拉进来，Reddit 与 GEO 负责让真实用户留下可被搜索到的长尾信任资产，SEO 和 Paid Ads 负责把流量飞轮踩起来。"
-                    : "StartPoint doesn't do piecemeal marketing. The six service lines are different pivots on the same 0→1 flywheel: Launch Video packs the value prop into 15 seconds, Product Hunt and KOL bring the first seed cohort, Reddit and GEO seed durable long-tail trust, and SEO + paid put the wheel in motion."}
+                    ? "MIST Ai 不做碎片化的营销外包。六条服务线是同一套 0→1 增长飞轮上的不同支点：Launch Video 负责在 15 秒内把价值主张讲清楚，Product Hunt 和 KOL 负责把首批种子用户拉进来，Reddit 与 GEO 负责让真实用户留下可被搜索到的长尾信任资产，SEO 和 Paid Ads 负责把流量飞轮踩起来。"
+                    : "MIST Ai doesn't do piecemeal marketing. The six service lines are different pivots on the same 0→1 flywheel: Launch Video packs the value prop into 15 seconds, Product Hunt and KOL bring the first seed cohort, Reddit and GEO seed durable long-tail trust, and SEO + paid put the wheel in motion."}
                 </p>
                 <p>
                   {locale === "zh"
@@ -139,8 +139,8 @@ export default async function ServicesPage({
               </div>
             </div>
 
-            <div className="rounded-3xl bg-white border border-ink/10 p-8 md:p-10 shadow-sm">
-              <h3 className="sp-display text-2xl md:text-3xl text-ink leading-tight">
+            <div className="rounded-3xl bg-[#0D1830] border border-white/8 p-8 md:p-10">
+              <h3 className="sp-display text-2xl md:text-3xl text-[#E8F0FF] leading-tight">
                 {locale === "zh"
                   ? "适合哪些产品阶段？"
                   : "Which product stages we fit"}
@@ -162,14 +162,14 @@ export default async function ServicesPage({
                 ).map((line) => (
                   <li
                     key={line}
-                    className="flex gap-3 text-ink/80 leading-relaxed"
+                    className="flex gap-3 text-white/70 leading-relaxed"
                   >
-                    <span className="mt-1.5 shrink-0 w-1.5 h-1.5 rounded-full bg-orange-500" />
+                    <span className="mt-1.5 shrink-0 w-1.5 h-1.5 rounded-full bg-[#00E676]" />
                     <span>{line}</span>
                   </li>
                 ))}
               </ul>
-              <p className="mt-6 text-sm text-ink/60 leading-relaxed">
+              <p className="mt-6 text-sm text-white/50 leading-relaxed">
                 {locale === "zh"
                   ? "不确定该先启动哪一条？30 分钟免费咨询帮你判断。"
                   : "Not sure which line to start with? A free 30-min call will tell you."}
