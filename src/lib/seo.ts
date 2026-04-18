@@ -77,7 +77,7 @@ export function organizationSchema(locale: string) {
     name: SITE_NAME,
     alternateName: "迷雾智能",
     url: SITE_URL,
-    logo: `${SITE_URL}/logo.svg`,
+    logo: `${SITE_URL}/brand/logo.jpg`,
     description:
       locale === "zh"
         ? "迷雾智能 MIST Ai 专注 AI Agent 与 AI SaaS 产品的 0→1 增长，覆盖 GTM 策略、Product Hunt、Launch Video、海外 KOL、SEO/GEO、广告投放与品牌沉淀。"
