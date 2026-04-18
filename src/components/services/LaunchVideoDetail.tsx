@@ -13,12 +13,16 @@ type Case = { brand: string; headline: string; metric: string };
  * Maps case brand names to a video asset in /public/videos/.
  * Brands without a video render the gradient placeholder card.
  * Add new videos by dropping under /public/videos/<name>.mp4 and updating this map.
+ *
+ * Note: source files were named after the internal client (Poly Final.mp4,
+ * Ava - Artisan V3.4.mp4, Miro V3.2.mp4). The PPT uses the public brand
+ * names Poly.app / Crunched / Blockit AI — same clients, different
+ * surfaced names. Keep the map keyed by the public brand name.
  */
 const VIDEO_BY_BRAND: Record<string, { src: string; poster?: string }> = {
   "Poly.app": { src: "/videos/poly.mp4" },
-  // Ava — Artisan V3.4 launch video; mapped to Crunched slot for now.
-  // If "Ava" is added to serviceDetails.launch-video.cases, move this key over.
   Crunched: { src: "/videos/ava-artisan.mp4" },
+  "Blockit AI": { src: "/videos/miro.mp4" },
 };
 
 export function LaunchVideoDetail() {
