@@ -1,5 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Container, Section } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Pill } from "@/components/ui/Pill";
@@ -229,6 +230,148 @@ export default async function KocPage({
                 </div>
               </div>
             ))}
+          </div>
+        </Container>
+      </Section>
+
+      {/* Proof — real account screenshots + videos */}
+      <Section bg="paper" className="!py-20 md:!py-24 relative overflow-hidden">
+        <div
+          aria-hidden="true"
+          className="absolute -top-40 right-1/4 w-[28rem] h-[28rem] rounded-full opacity-15 blur-3xl pointer-events-none"
+          style={{
+            background: "radial-gradient(circle, #2979FF 0%, transparent 70%)",
+          }}
+        />
+        <Container size="full" className="relative">
+          <div className="max-w-3xl mb-12">
+            <Pill variant="orange" size="md" className="mb-5">
+              {isZh ? "案例实证" : "Proof in motion"}
+            </Pill>
+            <h2 className="sp-display text-3xl md:text-4xl lg:text-5xl text-[#E8F0FF] leading-[1.08]">
+              {isZh
+                ? "不是 PPT — 是真实跑出结果的账号矩阵"
+                : "Not a deck — the actual account matrix that's working"}
+            </h2>
+            <p className="mt-5 text-white/65 leading-relaxed text-lg">
+              {isZh
+                ? "下面是该项目运营中的真实账号矩阵后台，以及单条破百万播放的 KOC 账号截图与实拍片段。"
+                : "Below: the live account-matrix back office, plus screen captures and on-camera footage from a single account that's broken 5M views."}
+            </p>
+          </div>
+
+          {/* Matrix dashboard — full-width landscape proof shot */}
+          <div className="rounded-3xl overflow-hidden border border-white/10 bg-[#0D1830] mb-10 md:mb-14">
+            <div className="px-6 md:px-8 py-4 border-b border-white/8 flex items-center gap-3">
+              <span className="flex gap-1.5">
+                <span className="w-2.5 h-2.5 rounded-full bg-white/15" />
+                <span className="w-2.5 h-2.5 rounded-full bg-white/15" />
+                <span className="w-2.5 h-2.5 rounded-full bg-white/15" />
+              </span>
+              <span className="text-white/45 text-xs font-mono">
+                {isZh
+                  ? "账号矩阵后台 · 多平台 KOC 分发"
+                  : "Account-matrix back office · multi-platform KOC distribution"}
+              </span>
+            </div>
+            <Image
+              src="/koc/proposal-2.png"
+              alt={
+                isZh
+                  ? "MIST Ai 操盘的多平台 KOC 账号矩阵后台截图"
+                  : "Back-office screenshot of the multi-platform KOC account matrix"
+              }
+              width={1288}
+              height={775}
+              className="w-full h-auto"
+            />
+          </div>
+
+          {/* Two-column: tall portrait screenshot + narrative */}
+          <div className="grid grid-cols-1 lg:grid-cols-[0.85fr_1fr] gap-10 lg:gap-14 items-center mb-10 md:mb-14">
+            <div className="rounded-3xl overflow-hidden border border-white/10 bg-[#030810] mx-auto max-w-sm w-full">
+              <Image
+                src="/koc/proposal-1.png"
+                alt={
+                  isZh
+                    ? "单个 KOC 账号视频网格,单条破 521 万播放"
+                    : "A single KOC account's video grid — top post over 5.21M views"
+                }
+                width={1408}
+                height={3068}
+                className="w-full h-auto"
+              />
+            </div>
+
+            <div>
+              <div className="text-[#00E676] text-xs font-bold tracking-[0.25em] uppercase mb-3">
+                {isZh ? "其中一个真实账号" : "One real account"}
+              </div>
+              <h3 className="sp-display text-2xl md:text-3xl lg:text-4xl text-[#E8F0FF] leading-tight">
+                {isZh
+                  ? "顶部单条 521 万播放,内容全部围绕产品场景"
+                  : "Top post: 5.21M views — every piece anchored to the product use case"}
+              </h3>
+              <ul className="mt-6 space-y-3">
+                {(isZh
+                  ? [
+                      "9 条样本中,5 条破百万播放,2 条破 18 万",
+                      "出镜达人的内容均围绕「学英语 30 天进步」这一产品场景",
+                      "评论区与 bio 链接全部沉淀到产品落地页",
+                    ]
+                  : [
+                      "5 of 9 sample posts cleared 1M views; 2 cleared 180k",
+                      "Every clip threads through one product use case (\u201cimprove English in 30 days\u201d)",
+                      "Comments + bio links all funnel to the product landing page",
+                    ]
+                ).map((line) => (
+                  <li
+                    key={line}
+                    className="flex items-start gap-3 text-white/80 text-[15px] md:text-base leading-relaxed"
+                  >
+                    <span
+                      aria-hidden="true"
+                      className="mt-1.5 shrink-0 w-1.5 h-1.5 rounded-full bg-[#00E676]"
+                    />
+                    <span>{line}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* Two video proof clips */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
+            <figure className="rounded-2xl overflow-hidden border border-white/10 bg-[#030810]">
+              <video
+                // eslint-disable-next-line jsx-a11y/media-has-caption
+                src="/videos/koc-case-1.mp4"
+                controls
+                playsInline
+                preload="metadata"
+                className="w-full aspect-video object-cover bg-black"
+              />
+              <figcaption className="px-5 py-4 text-white/65 text-sm leading-relaxed">
+                {isZh
+                  ? "真人出镜样片 — 围绕产品场景的 KOC 内容片段"
+                  : "On-camera sample — KOC content built around the product moment"}
+              </figcaption>
+            </figure>
+            <figure className="rounded-2xl overflow-hidden border border-white/10 bg-[#030810]">
+              <video
+                // eslint-disable-next-line jsx-a11y/media-has-caption
+                src="/videos/koc-screen-recording.mov"
+                controls
+                playsInline
+                preload="metadata"
+                className="w-full aspect-video object-cover bg-black"
+              />
+              <figcaption className="px-5 py-4 text-white/65 text-sm leading-relaxed">
+                {isZh
+                  ? "后台运营录屏 — 多账号同步分发流程"
+                  : "Back-office screen capture — multi-account sync workflow"}
+              </figcaption>
+            </figure>
           </div>
         </Container>
       </Section>
