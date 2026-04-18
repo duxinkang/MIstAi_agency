@@ -1,0 +1,315 @@
+{
+  "site": {
+    "name": "StartPoint 起始点",
+    "tagline": "只做 AI Agent 的 0→1 增长",
+    "description": "StartPoint 是专注 AI Agent 与 SaaS 产品 0→1 增长的营销合作伙伴，覆盖 GTM 策略、Product Hunt、Launch Video、海外 KOL、SEO/GEO、广告投放与品牌沉淀。"
+  },
+  "nav": {
+    "services": "业务",
+    "cases": "客户案例",
+    "about": "关于我们",
+    "pricing": "合作模式",
+    "contact": "联系",
+    "cta": "免费咨询"
+  },
+  "hero": {
+    "eyebrow": "Let's Start",
+    "titleZh": "起始点",
+    "titleEn": "StartPoint",
+    "subtitle": "只做 AI Agent 的 0→1 增长",
+    "cta": "获得 30 分钟免费咨询",
+    "ctaSecondary": "查看服务"
+  },
+  "problem": {
+    "title": "AI Agent 的问题，不在技术，在 GTM",
+    "items": [
+      { "n": "01", "text": "技术导向，而非用户导向" },
+      { "n": "02", "text": "有功能，但无「刚需场景」" },
+      { "n": "03", "text": "有流量，但无精准人群" }
+    ]
+  },
+  "partner": {
+    "kicker": "我们是谁？",
+    "headline": "您的增长合伙人",
+    "title": "AI 懂技术，但 0→1 的增长，仍然需要人",
+    "pillars": [
+      { "label": "深度陪伴", "text": "我们直接对结果负责" },
+      { "label": "垂直专注", "text": "只服务 AI Agent / SaaS" },
+      { "label": "价值翻译", "text": "把技术变成市场和资本听得懂的语言" }
+    ],
+    "footnote": "覆盖 AI Agent 从 0 → 1 的关键 3 个断点"
+  },
+  "services": {
+    "title": "业务覆盖",
+    "description": "StartPoint 提供覆盖 AI 产品全生命周期的六大核心营销服务，从品牌曝光到精准转化，构建完整的增长飞轮",
+    "center": "市场策略",
+    "indexTitle": "六大核心营销服务",
+    "indexDescription": "覆盖 AI 产品全生命周期，从品牌曝光到精准转化，构建完整的增长飞轮",
+    "items": [
+      { "slug": "kol", "title": "海外 KOL & KOC 营销", "short": "精准匹配目标用户高度重合的达人，构建真实口碑与病毒式扩散" },
+      { "slug": "product-hunt", "title": "Product Hunt 冲榜", "short": "从预热到冲刺全程陪跑，冲击日榜前三、带来数千早期用户" },
+      { "slug": "launch-video", "title": "Launch Video 制作", "short": "高 ROI 的冷启动视频资产，精准传递产品核心价值主张" },
+      { "slug": "seo-geo", "title": "SEO / GEO", "short": "既在 Google 上排得好，也能被 ChatGPT / Perplexity 引用" },
+      { "slug": "paid-ads", "title": "广告投放 / Paid Ads", "short": "覆盖 Google、Meta、X、LinkedIn、Reddit 的全链路投放" },
+      { "slug": "social", "title": "社群 / Reddit 口碑", "short": "在 Reddit 等垂类社区建立真实品牌存在，获取高质量种子用户" }
+    ]
+  },
+  "serviceDetails": {
+    "launch-video": {
+      "title": "Launch Video 制作",
+      "kicker": "LAUNCH VIDEO",
+      "intro": "一支高质量的产品发布视频是 AI 产品冷启动阶段最高 ROI 的营销资产。它不仅能在 Product Hunt、官网首页与社交媒体上驱动转化，更能精准传递产品的核心价值主张。",
+      "steps": [
+        { "title": "脚本策划", "text": "深度挖掘产品核心差异化价值，用听得懂的语言构建打动人心的产品故事。" },
+        { "title": "产品演示制作", "text": "专业级屏幕录制与动效设计，清晰展示产品工作流，降低用户认知门槛。" },
+        { "title": "后期剪辑优化", "text": "精准节奏把控、配乐、字幕与视觉动效全面优化，确保完播率与点击转化。" }
+      ],
+      "cases": [
+        { "brand": "Blockit AI", "headline": "用视频讲好创始人的故事，爆发式传播，撬动高转化", "metric": "发布 6 小时突破百万观看量，1,214 注册，272 信用卡付费" },
+        { "brand": "Poly.app", "headline": "用纯视觉语言，把文件浏览器讲成 AI 时代的变革故事", "metric": "累积播放量 300 万+，融资 $16M" },
+        { "brand": "Crunched", "headline": "400 万播放的背后：视频让复杂产品，一眼就懂", "metric": "累积播放量 400 万+，迅速打开欧美市场" }
+      ]
+    },
+    "kol": {
+      "title": "海外达人合作",
+      "kicker": "KOL & KOC",
+      "intro": "精准的达人营销是 AI 产品获取高质量早期用户最高效的路径之一。我们拥有覆盖全球 AI、科技、生产力垂类的达人资源网络，为您匹配最具商业转化力的合作伙伴。",
+      "subtitle": "专注 AI Agent 和 SaaS 的达人数据库",
+      "steps": [
+        { "title": "KOL 精准匹配", "text": "基于受众画像、内容调性与历史转化数据，精准筛选与 AI 产品目标用户高度重合的头部达人。" },
+        { "title": "KOC 口碑矩阵", "text": "构建中尾部达人矩阵，以真实用户视角产出高可信度内容，在目标社区内形成病毒式口碑扩散。" },
+        { "title": "效果追踪优化", "text": "全链路数据监控与归因分析，实时评估每位达人的 ROI 表现，动态优化合作策略与资源配置。" }
+      ]
+    },
+    "paid-ads": {
+      "title": "广告投流",
+      "kicker": "PAID ADS",
+      "intro": "覆盖主流全球广告生态，以结果为导向的多渠道投放方法论，让每一分预算都可被追踪、被优化。",
+      "channels": ["Google 生态", "Meta 生态", "X Ads", "LinkedIn", "Reddit"],
+      "methodology": [
+        { "title": "受众分层建模", "text": "基于意图信号将受众切分为冷/温/热三层，投放策略与素材差异化" },
+        { "title": "创意素材工厂", "text": "系统化产出多版本创意，A/B 与增益测试驱动素材迭代" },
+        { "title": "归因模型优化", "text": "跨渠道归因与自动化出价，降低 CAC、提高增量转化" }
+      ],
+      "goals": [
+        { "title": "让更多对的人看到你", "text": "品牌曝光 / 网站访问" },
+        { "title": "让用户愿意点进来", "text": "点击率 / 注册转化" },
+        { "title": "让用户留下来并付费", "text": "转化 / 留存 / LTV 提升" },
+        { "title": "让流量持续复用", "text": "再营销与用户沉淀" }
+      ]
+    },
+    "product-hunt": {
+      "title": "Product Hunt 冲榜",
+      "kicker": "PRODUCT HUNT",
+      "intro": "Product Hunt 是全球最具影响力的产品发现平台，单次成功冲榜可带来数千名早期用户、媒体报道与投资人关注。我们提供从预热到冲刺的全程专业陪跑服务。",
+      "targets": [
+        "冲击 Product of the Day 日榜前三",
+        "获得 500+ 真实 Upvotes 与优质评论",
+        "带来 2,000+ 官网访问与用户注册",
+        "触达全球顶级科技媒体与投资人视野"
+      ],
+      "steps": [
+        { "title": "产品页面优化", "text": "标题、描述、截图、Demo 视频全面打磨，提升首屏转化率" },
+        { "title": "社区资源预热", "text": "提前激活 Hunter 网络，构建早期支持者社区" },
+        { "title": "发布日期精准执行", "text": "协调全球时区流量，确保关键时间窗口冲击榜首" },
+        { "title": "后续流量承接", "text": "将 PH 流量转化为注册用户与长期留存" }
+      ]
+    },
+    "social": {
+      "title": "Reddit 与社区口碑",
+      "kicker": "REDDIT & COMMUNITY",
+      "intro": "Reddit 是全球 AI 产品早期用户密度最高的平台之一。在 r/artificial、r/SaaS、r/MachineLearning 等核心社区中建立真实的品牌存在，是获取高质量种子用户的关键路径。",
+      "values": [
+        "Reddit 帖子在 Google 的搜索排名极高，优质内容可带来持续数月的免费 SEO 流量",
+        "Redditor 对营销内容极度敏感，真实有价值的内容才能赢得社区信任与口碑传播",
+        "AI / 科技垂类社区聚集了大量产品早期采用者、开发者与意见领袖"
+      ],
+      "steps": [
+        { "title": "识别并深耕高价值垂类 Subreddit 社区", "text": "根据产品定位精准锁定 3-5 个核心 Subreddit" },
+        { "title": "以真实用户身份构建社区信任度与账号权重", "text": "长期内容经营，而非一次性广告" },
+        { "title": "策划具有讨论价值的话题内容，引发有机传播", "text": "产出能被顶贴、被讨论的真实内容" }
+      ]
+    },
+    "seo-geo": {
+      "title": "SEO / GEO",
+      "kicker": "SEO · GEO",
+      "intro": "传统 SEO 让你在 Google 上被搜到；GEO（Generative Engine Optimization）让你在 ChatGPT、Perplexity、Gemini、Claude 的回答中被引用。我们两条线一起做。",
+      "steps": [
+        { "title": "关键词与意图建模", "text": "围绕产品场景+用户意图画地图，锁定高商业价值关键词" },
+        { "title": "内容矩阵 + 外链建设", "text": "系统化产出 pSEO 页面与高质量专题内容，同步做高权重外链" },
+        { "title": "结构化数据 + llms.txt", "text": "JSON-LD、FAQPage、Article schema，面向 AI 爬虫开放 llms.txt" },
+        { "title": "持续监测与迭代", "text": "追踪 Google 排名 + AI Answer 引用率，季度级优化策略" }
+      ]
+    }
+  },
+  "servicesIndex": {
+    "title": "我们提供什么",
+    "subtitle": "六条差异化服务线，围绕 AI 产品 0→1 的真实瓶颈设计。每一条都可以单独买，也可以组合成完整的增长陪跑。",
+    "cta": "聊聊最适合你的组合"
+  },
+  "about": {
+    "hero": {
+      "title": "关于 StartPoint",
+      "subtitle": "一支同时懂技术、懂增长、懂资本叙事的复合型团队",
+      "body": "我们只做一件事：把 AI Agent 产品从 0 带到 1。不是碎片化的营销外包，而是与你共担风险的增长合伙人。"
+    }
+  },
+  "engine": {
+    "title": "我们的四步增长引擎",
+    "subtitle": "从 GTM 产品发布到品牌打造",
+    "description": "无论您的产品处于冷启动期、成长期还是规模化阶段，StartPoint 都能提供精准匹配当前阶段的增长策略，帮助 AI 产品在全球市场建立持久的品牌影响力与用户增长",
+    "steps": [
+      { "n": "一", "title": "诊断与策略", "text": "GTM 策略制定，明确核心价值主张" },
+      { "n": "二", "title": "市场发布", "text": "Product Hunt 冲榜，Launch Video 引爆声量" },
+      { "n": "三", "title": "规模增长", "text": "达人矩阵 + SEO + 多渠道投放，持续获客" },
+      { "n": "四", "title": "品牌沉淀", "text": "IP 打造 + 社区运营，构建护城河" }
+    ]
+  },
+  "cases": {
+    "title": "用户案例",
+    "items": [
+      {
+        "tag": "AI 写作工具",
+        "title": "Product Hunt 冲榜案例",
+        "text": "协助某 AI 写作 SaaS 产品完成 Product Hunt 发布，最终斩获当日榜第 2 名，单日带来 3,200+ 网站访问 与 800+ 新用户注册，发布后 7 天内实现付费转化率提升 34%"
+      },
+      {
+        "tag": "AI Agent 平台",
+        "title": "SEO 有机增长案例",
+        "text": "通过 6 个月系统化 SEO 内容布局与外链建设，帮助某 AI Agent 平台将月有机搜索流量从 2,000 提升至 18,000+，核心关键词首页排名数量增长 420%，获客成本降低 65%"
+      },
+      {
+        "tag": "AI 工具",
+        "title": "达人营销案例",
+        "text": "为某 AI 效率工具协调 12 位垂类科技达人进行联合推广，内容总曝光量达 240 万+，带来 5,600+ 新注册用户，其中付费转化率高达 18%，远超行业平均水平"
+      }
+    ]
+  },
+  "vs": {
+    "title": "为什么选择 StartPoint？",
+    "subtitle": "更理性、更敏捷、更确定的增长路径",
+    "headline": "自建市场团队 vs StartPoint",
+    "left": [
+      { "title": "启动慢", "text": "招聘 + 磨合周期长，通常需要 4-6 个月才能真正启动" },
+      { "title": "成本高", "text": "人力成本高且持续，招聘、管理、试错均为隐性支出" },
+      { "title": "无经验", "text": "从零摸索 AI / 新领域，方向与方法高度不确定" },
+      { "title": "独自担风险", "text": "方向失误与执行风险，全部由公司自行承担" }
+    ],
+    "right": [
+      { "title": "高效启动", "text": "最快 3 天启动，直接切入项目与市场验证" },
+      { "title": "单一可控", "text": "单一合同价，成本清晰可控，覆盖策略、内容与执行" },
+      { "title": "成熟方法", "text": "复用已验证的方法与经验，直击增长核心问题" },
+      { "title": "风险共担", "text": "增长结果与我们收益深度绑定，风险共同承担" }
+    ]
+  },
+  "stats": {
+    "title": "助力 AI 产品实现突破性营销增长",
+    "subtitle": "达人营销 · Product Hunt · Launch Video · SEO/GEO · 广告投放 · 品牌 IP 打造",
+    "items": [
+      { "n": "50+", "label": "全球合作专家", "text": "AI SaaS 营销专家与顶级 Agency 网络" },
+      { "n": "30+", "label": "成功落地案例", "text": "覆盖多类型 AI 产品的增长实践" },
+      { "n": "7天", "label": "快速启动", "text": "确认合作后最快启动时间" },
+      { "n": "100%", "label": "AI 赛道专注", "text": "服务 AI / SaaS / Agent 产品" },
+      { "n": "15+", "label": "覆盖国家和地区", "text": "" },
+      { "n": "100%", "label": "客户满意度", "text": "" }
+    ]
+  },
+  "advantages": {
+    "title": "我们的核心优势",
+    "subtitle": "六大差异化能力，让 StartPoint 成为 AI 产品营销增长的最优合作伙伴",
+    "items": [
+      { "title": "全链路 AI / SaaS 营销增长方案", "text": "从 GTM 策略到规模化增长，覆盖产品全生命周期的一体化营销解决方案，告别碎片化服务" },
+      { "title": "本地化品牌塑造", "text": "深度理解中西方市场文化差异，打造真正贴合目标市场的品牌叙事与传播策略" },
+      { "title": "结果导向的收费模式", "text": "以实际业务增长为核心衡量标准，确保每笔投入都与可量化的商业成果直接挂钩" },
+      { "title": "定制化方案", "text": "拒绝模板化操作，根据产品阶段、目标市场与竞争格局，量身定制专属增长策略" },
+      { "title": "更懂 AI 产品逻辑与用户需求", "text": "团队成员深度参与 AI 产品研发与运营，精准把握 AI 用户的决策路径与产品感知" },
+      { "title": "策略创新与市场适应性", "text": "持续追踪全球 AI 营销前沿趋势，快速迭代策略以应对市场变化，保持竞争优势" }
+    ]
+  },
+  "team": {
+    "title": "是谁在陪你走 0→1",
+    "subtitle": "一支同时懂技术、懂增长、懂资本叙事的复合型团队",
+    "description": "与国外数十位 AI SaaS 营销专家及顶级 Agency 建立长期战略合作关系，共享经过市场验证的方法论与成功案例经验，为客户带来全球视野与本地执行力的双重优势",
+    "members": [
+      { "name": "Frank", "role": "技术", "title": "前网易算法专家", "text": "懂代码，翻译技术价值" },
+      { "name": "Elaine", "role": "流量", "title": "头部大厂市场专家", "text": "懂流量，洞察用户" },
+      { "name": "Simy", "role": "品牌", "title": "海外市场专家", "text": "5 亿美金操盘手" }
+    ]
+  },
+  "commitment": {
+    "title": "核心承诺",
+    "subtitle": "我们不是给建议，而是陪你把 0→1 跑通",
+    "centerText": "最关键的 3-6 个月 0→1 跑通阶段",
+    "steps": [
+      { "n": "一", "title": "找准市场", "text": "明确产品定位与差异化价值，定义清晰的用户画像、核心痛点与需求" },
+      { "n": "二", "title": "打通渠道", "text": "建立 1-2 条有效的初始获客路径，并验证转化" },
+      { "n": "三", "title": "夯实故事", "text": "梳理商业模式，精心准备打动用户与投资人的核心叙事与融资材料" },
+      { "n": "四", "title": "落地执行", "text": "通过真实用户反馈与数据，快速验证市场、渠道与叙事是否成立" }
+    ]
+  },
+  "outro": {
+    "title": "更理性、更敏捷、更确定的增长路径",
+    "body1": "对于处于从 0 到 1 阶段的 AI Agent 团队，每一分资源、每一天时间都至关重要。",
+    "body2": "传统自建市场的路径充满不确定性与高昂的隐性成本。选择起始点 StartPoint，意味着选择一条被验证过、且与您利益深度绑定的高效路径"
+  },
+  "pricing": {
+    "title": "我们的合作模式",
+    "plans": [
+      {
+        "key": "diagnosis",
+        "icon": "🧭",
+        "title": "战略问诊",
+        "text": "通过 3 次深度工作坊（共 6 小时），完成「诊断与策略定义」阶段",
+        "badges": ["2-3 周", "找准方向", "¥15,000"],
+        "footer": "帮你看清方向是否成立"
+      },
+      {
+        "key": "lite",
+        "icon": "🏪",
+        "title": "策略与启动陪跑（轻量版）",
+        "text": "内容基建与 GTM 策略输出，并主导执行启动与路径验证等初期工作，提供策略、核心内容与投放指导",
+        "badges": [">3 个月", "¥30,000 – ¥50,000 / 月"],
+        "footer": "把策略变成可执行的第一步"
+      },
+      {
+        "key": "full",
+        "icon": "🚀",
+        "title": "全链路增长陪跑（完整版）",
+        "text": "全面负责「策略-执行-优化」增长闭环，全权主导执行与迭代，采用「基础月费 + 利润分成」模式，深度绑定增长",
+        "badges": ["<3 个月", "¥80,000 – ¥120,000 / 月"],
+        "footer": "对增长结果负责的长期合作"
+      }
+    ]
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "获得免费 30 分钟咨询",
+    "locations": "杭州 / 上海 / 巴黎 可线下 coffee chat",
+    "email": "contact@startpoint.ai",
+    "form": {
+      "name": "您的称呼",
+      "company": "公司 / 产品名",
+      "stage": "产品阶段",
+      "stageOptions": ["MVP 前", "已有 Demo", "已上线 0-100 用户", "100-1k 用户", "1k+ 用户"],
+      "message": "想聊的方向（选填）",
+      "submit": "预约咨询",
+      "submitting": "提交中…",
+      "success": "已收到，我们会在 24 小时内回复到您的邮箱",
+      "error": "提交失败，请直接邮件联系 contact@startpoint.ai"
+    }
+  },
+  "footer": {
+    "rights": "© 2026 StartPoint Agency · 只做 AI Agent 的 0→1 增长",
+    "language": "语言"
+  },
+  "faq": {
+    "title": "常见问题",
+    "items": [
+      { "q": "StartPoint 只服务 AI Agent 吗？", "a": "是的。我们专注 AI Agent / AI SaaS 产品的 0→1 增长，不做电商、游戏、消费品牌等品类。垂直聚焦让我们对目标用户的决策路径和产品感知理解得更深。" },
+      { "q": "最快多久能启动？", "a": "战略问诊 3 天内可开始；轻量陪跑与完整陪跑签约后最快 7 天启动，直接进入执行阶段。" },
+      { "q": "收费模式是什么？", "a": "三档：战略问诊 ¥15,000 一次性；轻量陪跑 ¥30k-50k / 月；完整陪跑 ¥80k-120k / 月 + 增长利润分成。具体方案按产品阶段定制。" },
+      { "q": "如何衡量增长效果？", "a": "在启动阶段我们会和你共同定义 3 个北极星指标（通常是注册数、付费转化、ARR 增长），所有工作围绕这些指标复盘。完整版合作里我们的分成直接与这些指标挂钩。" },
+      { "q": "你们的案例可以看吗？", "a": "本站 /cases 页面列出 3 个公开案例。更多在 NDA 下可以一对一分享，通过联系表单或邮件预约 30 分钟咨询即可。" }
+    ]
+  }
+}

@@ -1,0 +1,315 @@
+{
+  "site": {
+    "name": "StartPoint",
+    "tagline": "0→1 Growth, built exclusively for AI Agents",
+    "description": "StartPoint is a growth partner focused on 0→1 traction for AI Agents and AI SaaS — GTM strategy, Product Hunt, Launch Video, KOL/KOC outreach, SEO/GEO, paid ads, and brand IP."
+  },
+  "nav": {
+    "services": "Services",
+    "cases": "Cases",
+    "about": "About",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "cta": "Book a call"
+  },
+  "hero": {
+    "eyebrow": "Let's Start",
+    "titleZh": "起始点",
+    "titleEn": "StartPoint",
+    "subtitle": "0→1 Growth, built exclusively for AI Agents",
+    "cta": "Get a free 30-min consult",
+    "ctaSecondary": "See services"
+  },
+  "problem": {
+    "title": "AI Agents don't fail on tech. They fail on GTM.",
+    "items": [
+      { "n": "01", "text": "Tech-driven, not user-driven" },
+      { "n": "02", "text": "Features without a must-have scenario" },
+      { "n": "03", "text": "Traffic without the right audience" }
+    ]
+  },
+  "partner": {
+    "kicker": "Who we are",
+    "headline": "Your growth partner",
+    "title": "AI gets the code. But 0→1 growth still needs humans.",
+    "pillars": [
+      { "label": "Deep partnership", "text": "We own the outcome with you" },
+      { "label": "Vertical focus", "text": "AI Agent / SaaS only" },
+      { "label": "Value translation", "text": "Turn tech into language markets and investors understand" }
+    ],
+    "footnote": "Covering the 3 critical breakpoints on the AI Agent 0→1 journey"
+  },
+  "services": {
+    "title": "What we do",
+    "description": "Six growth services covering the full AI product lifecycle — from brand awareness to precision conversion — built into one compounding flywheel.",
+    "center": "GTM Strategy",
+    "indexTitle": "Six core growth services",
+    "indexDescription": "Covering the full AI product lifecycle — from awareness to precision conversion — as one compounding flywheel.",
+    "items": [
+      { "slug": "kol", "title": "Global KOL & KOC", "short": "Matched creators whose audience overlaps your ICP — real word-of-mouth, viral lift." },
+      { "slug": "product-hunt", "title": "Product Hunt launch", "short": "End-to-end PH run — top-3 Product of the Day, thousands of early users." },
+      { "slug": "launch-video", "title": "Launch Video", "short": "The highest-ROI asset for cold start — craft the narrative, nail the delivery." },
+      { "slug": "seo-geo", "title": "SEO / GEO", "short": "Rank on Google and get cited by ChatGPT, Perplexity, and Gemini." },
+      { "slug": "paid-ads", "title": "Paid Ads", "short": "Full-funnel paid across Google, Meta, X, LinkedIn, and Reddit." },
+      { "slug": "social", "title": "Reddit & community", "short": "Build real brand presence inside niche Reddit communities — where AI's early users live." }
+    ]
+  },
+  "serviceDetails": {
+    "launch-video": {
+      "title": "Launch Video",
+      "kicker": "LAUNCH VIDEO",
+      "intro": "A high-quality launch video is the highest-ROI asset in the cold-start phase of an AI product. It drives conversion on Product Hunt, on your homepage, and across social — and, done right, it nails the core value proposition.",
+      "steps": [
+        { "title": "Script & story", "text": "Dig out the sharpest differentiation and wrap it in a story that actually lands — in language users speak." },
+        { "title": "Product demo", "text": "Studio-grade screen capture and motion design. Show the workflow crisply. Lower the cognitive barrier." },
+        { "title": "Edit & polish", "text": "Pacing, sound, captions, motion — tuned for completion rate and click-through." }
+      ],
+      "cases": [
+        { "brand": "Blockit AI", "headline": "Founder-led narrative that went viral and converted", "metric": "1M+ views in 6 hours, 1,214 signups, 272 paid conversions" },
+        { "brand": "Poly.app", "headline": "Pure-visual storytelling: reframing a file browser as the AI-era UX", "metric": "3M+ views, $16M raised" },
+        { "brand": "Crunched", "headline": "4M views — making a complex product obvious in one watch", "metric": "4M+ views, rapid US/EU market entry" }
+      ]
+    },
+    "kol": {
+      "title": "Creator partnerships",
+      "kicker": "KOL & KOC",
+      "intro": "Precision creator marketing is the fastest route to high-quality early users for AI products. We've built a network across global AI, tech, and productivity verticals — matching you with the creators who actually convert.",
+      "subtitle": "A creator database focused on AI Agent and SaaS",
+      "steps": [
+        { "title": "KOL precision match", "text": "Based on audience profile, content tone, and historical conversion — shortlist the top-tier creators whose audience overlaps your ICP." },
+        { "title": "KOC word-of-mouth matrix", "text": "Mid- and long-tail creators producing trustworthy, user-POV content — engineered for viral community spread." },
+        { "title": "Outcome tracking", "text": "End-to-end attribution and per-creator ROI monitoring — dynamic reallocation across partners." }
+      ]
+    },
+    "paid-ads": {
+      "title": "Paid advertising",
+      "kicker": "PAID ADS",
+      "intro": "Full coverage across major global ad ecosystems. An outcome-driven, multi-channel methodology — every dollar trackable, every dollar optimizable.",
+      "channels": ["Google ecosystem", "Meta ecosystem", "X Ads", "LinkedIn", "Reddit"],
+      "methodology": [
+        { "title": "Audience layering", "text": "Cold / warm / hot segmentation based on intent signals, with differentiated creative per layer" },
+        { "title": "Creative factory", "text": "Systematic multi-variant creative output; A/B and incrementality testing drive iteration" },
+        { "title": "Attribution optimization", "text": "Cross-channel attribution and automated bidding to reduce CAC and grow incremental conversion" }
+      ],
+      "goals": [
+        { "title": "Reach the right people", "text": "Brand awareness / site visits" },
+        { "title": "Make them click", "text": "CTR / signup conversion" },
+        { "title": "Keep and monetize them", "text": "Conversion / retention / LTV" },
+        { "title": "Compound the traffic", "text": "Remarketing and audience flywheel" }
+      ]
+    },
+    "product-hunt": {
+      "title": "Product Hunt launch",
+      "kicker": "PRODUCT HUNT",
+      "intro": "Product Hunt is the most influential product-discovery platform on the planet. A successful launch means thousands of early users, press coverage, and investor attention. We run the full playbook — pre-hype to sprint day.",
+      "targets": [
+        "Top 3 Product of the Day",
+        "500+ authentic upvotes with quality comments",
+        "2,000+ website visits and signups",
+        "Visibility with top-tier tech media and investors"
+      ],
+      "steps": [
+        { "title": "Page optimization", "text": "Title, tagline, gallery, demo video — tuned for above-the-fold conversion" },
+        { "title": "Community warm-up", "text": "Activate Hunter network ahead of time; build an early-supporter core" },
+        { "title": "Launch-day execution", "text": "Coordinate traffic across time zones; hit the critical windows" },
+        { "title": "Traffic capture", "text": "Convert PH traffic into signups and long-term retention" }
+      ]
+    },
+    "social": {
+      "title": "Reddit & community",
+      "kicker": "REDDIT & COMMUNITY",
+      "intro": "Reddit is one of the densest gatherings of AI early adopters anywhere. Building real brand presence in r/artificial, r/SaaS, r/MachineLearning and adjacent communities is the most reliable way to acquire high-quality seed users.",
+      "values": [
+        "Reddit threads rank extremely well in Google — great content delivers SEO tailwind for months",
+        "Redditors are hypersensitive to marketing — only authentic value wins trust and word-of-mouth",
+        "AI/tech subreddits concentrate early adopters, builders, and opinion leaders"
+      ],
+      "steps": [
+        { "title": "Identify and cultivate high-value subreddits", "text": "Lock in 3-5 core subs aligned with your product positioning" },
+        { "title": "Build trust and account authority as a real user", "text": "Long-term content work, not one-off ads" },
+        { "title": "Seed topics with discussion value, spark organic spread", "text": "Create content that gets upvoted and argued with" }
+      ]
+    },
+    "seo-geo": {
+      "title": "SEO / GEO",
+      "kicker": "SEO · GEO",
+      "intro": "Classic SEO gets you found on Google. GEO (Generative Engine Optimization) gets you cited inside ChatGPT, Perplexity, Gemini, and Claude answers. We run both — in parallel.",
+      "steps": [
+        { "title": "Keyword + intent modeling", "text": "Map product scenarios × user intent; lock in commercially valuable keywords" },
+        { "title": "Content matrix + backlinks", "text": "Systematic pSEO pages and pillar content, with high-authority link building" },
+        { "title": "Structured data + llms.txt", "text": "JSON-LD, FAQPage, Article schema; llms.txt opened for AI crawlers" },
+        { "title": "Monitor and iterate", "text": "Track Google rank and AI answer-citation rate; quarterly strategy refresh" }
+      ]
+    }
+  },
+  "servicesIndex": {
+    "title": "What we offer",
+    "subtitle": "Six differentiated service lines, each built around a real bottleneck on the 0→1 journey. Pick one, or combine them into a full growth engagement.",
+    "cta": "Let's talk about the right mix"
+  },
+  "about": {
+    "hero": {
+      "title": "About StartPoint",
+      "subtitle": "A hybrid team fluent in tech, growth, and investor narrative",
+      "body": "We do one thing: take AI Agent products from 0 to 1. Not fragmented marketing outsourcing — a growth partner that shares the risk."
+    }
+  },
+  "engine": {
+    "title": "Our four-step growth engine",
+    "subtitle": "From GTM launch to brand compounding",
+    "description": "Whether you're pre-launch, growing, or scaling, StartPoint matches strategy to stage — building lasting brand influence and user growth in global markets.",
+    "steps": [
+      { "n": "1", "title": "Diagnose & strategize", "text": "Define GTM, nail the core value proposition" },
+      { "n": "2", "title": "Launch loudly", "text": "Product Hunt run + Launch Video to ignite reach" },
+      { "n": "3", "title": "Scale growth", "text": "Creator matrix + SEO + multi-channel paid, compounding acquisition" },
+      { "n": "4", "title": "Brand moat", "text": "IP building + community, the long game" }
+    ]
+  },
+  "cases": {
+    "title": "Client outcomes",
+    "items": [
+      {
+        "tag": "AI writing tool",
+        "title": "Product Hunt launch",
+        "text": "Launched an AI writing SaaS on Product Hunt, finished #2 Product of the Day, drove 3,200+ site visits and 800+ signups in a single day, and lifted paid conversion 34% in the week after."
+      },
+      {
+        "tag": "AI Agent platform",
+        "title": "Organic SEO growth",
+        "text": "6 months of structured content + link building took monthly organic search from 2,000 to 18,000+, grew first-page rankings 420%, and cut CAC by 65%."
+      },
+      {
+        "tag": "AI productivity tool",
+        "title": "Creator partnerships",
+        "text": "Orchestrated 12 vertical tech creators into a joint campaign — 2.4M impressions, 5,600+ signups, 18% paid conversion, well above the category average."
+      }
+    ]
+  },
+  "vs": {
+    "title": "Why StartPoint?",
+    "subtitle": "A more rational, agile, and certain path to growth",
+    "headline": "In-house team vs StartPoint",
+    "left": [
+      { "title": "Slow start", "text": "Hiring + onboarding, 4-6 months before anything real happens" },
+      { "title": "High cost", "text": "Ongoing headcount plus hidden spend on hiring, management, and false starts" },
+      { "title": "No playbook", "text": "Figuring out AI from scratch — direction and method both uncertain" },
+      { "title": "Risk on you", "text": "Strategic and execution risk, fully absorbed by the company" }
+    ],
+    "right": [
+      { "title": "Fast start", "text": "Up and running in 3 days, straight into execution and validation" },
+      { "title": "Transparent cost", "text": "One contract price covering strategy, content, and execution — fully visible" },
+      { "title": "Proven playbook", "text": "Battle-tested methods, straight at the growth bottleneck" },
+      { "title": "Shared risk", "text": "Our upside is tied to your growth outcomes — we win together" }
+    ]
+  },
+  "stats": {
+    "title": "Breakthrough growth for AI products",
+    "subtitle": "Creators · Product Hunt · Launch Video · SEO/GEO · Paid Ads · Brand IP",
+    "items": [
+      { "n": "50+", "label": "Global specialists", "text": "AI SaaS marketers and top-tier agency network" },
+      { "n": "30+", "label": "Wins shipped", "text": "Across a wide range of AI products" },
+      { "n": "7d", "label": "Fast start", "text": "Fastest time from signed to live" },
+      { "n": "100%", "label": "AI-only focus", "text": "Only AI / SaaS / Agent products" },
+      { "n": "15+", "label": "Countries reached", "text": "" },
+      { "n": "100%", "label": "Client satisfaction", "text": "" }
+    ]
+  },
+  "advantages": {
+    "title": "Why we win",
+    "subtitle": "Six differentiators that make StartPoint the right growth partner for AI products",
+    "items": [
+      { "title": "End-to-end AI/SaaS growth", "text": "GTM to scale under one roof — lifecycle coverage, no fragmented vendors" },
+      { "title": "Local brand building", "text": "Deep grasp of East/West market differences — narrative and distribution that actually fit the target market" },
+      { "title": "Outcome-based pricing", "text": "Real business growth is the benchmark — every dollar maps to a measurable result" },
+      { "title": "Custom playbooks", "text": "No templates. Strategy tailored to your stage, target market, and competitive landscape" },
+      { "title": "We get AI products", "text": "Our team has built and shipped AI products — we know the decision journey of AI users" },
+      { "title": "Strategy that adapts", "text": "Tracking global AI marketing trends, iterating fast to stay ahead" }
+    ]
+  },
+  "team": {
+    "title": "Who walks 0→1 with you",
+    "subtitle": "A hybrid team fluent in tech, growth, and investor narrative",
+    "description": "Long-term partnerships with dozens of international AI SaaS marketers and top agencies — shared, validated playbooks that give you global vision with local execution.",
+    "members": [
+      { "name": "Frank", "role": "Tech", "title": "ex-NetEase ML Lead", "text": "Reads code. Translates tech into value." },
+      { "name": "Elaine", "role": "Growth", "title": "Top-tier Big Tech marketing", "text": "Knows traffic. Reads users." },
+      { "name": "Simy", "role": "Brand", "title": "Global market lead", "text": "US$500M budget under her belt." }
+    ]
+  },
+  "commitment": {
+    "title": "Our commitment",
+    "subtitle": "We don't hand you advice. We run 0→1 with you.",
+    "centerText": "The critical 3-6 month 0→1 sprint",
+    "steps": [
+      { "n": "1", "title": "Find the market", "text": "Lock down positioning and differentiators; define the persona, pain, and need" },
+      { "n": "2", "title": "Open channels", "text": "Stand up 1-2 acquisition paths and validate conversion" },
+      { "n": "3", "title": "Sharpen the story", "text": "Business model + narrative that moves users and investors; fundraising materials" },
+      { "n": "4", "title": "Ship & validate", "text": "Real user feedback + data to prove the market / channel / story hypothesis" }
+    ]
+  },
+  "outro": {
+    "title": "A more rational, agile, and certain path to growth",
+    "body1": "For AI Agent teams in the 0→1 phase, every dollar and every day matters.",
+    "body2": "The DIY market-team route is full of uncertainty and hidden cost. Choosing StartPoint means choosing a validated path where our upside is tied to yours."
+  },
+  "pricing": {
+    "title": "How we work",
+    "plans": [
+      {
+        "key": "diagnosis",
+        "icon": "🧭",
+        "title": "Strategy Diagnosis",
+        "text": "Three deep workshops (6 hours total) to complete the Diagnose & Strategy phase",
+        "badges": ["2-3 weeks", "Find direction", "¥15,000"],
+        "footer": "See if the direction is real"
+      },
+      {
+        "key": "lite",
+        "icon": "🏪",
+        "title": "Launch Partnership (Lite)",
+        "text": "Content foundation + GTM strategy output, leading the initial launch and path validation; strategy, core content, and paid guidance",
+        "badges": [">3 months", "¥30,000 – ¥50,000 / mo"],
+        "footer": "Turn strategy into the first executable step"
+      },
+      {
+        "key": "full",
+        "icon": "🚀",
+        "title": "Full-Stack Growth (Complete)",
+        "text": "Own the Strategy → Execute → Optimize loop. Base retainer + profit share — our outcomes tied to yours.",
+        "badges": ["<3 months", "¥80,000 – ¥120,000 / mo"],
+        "footer": "Long-term partnership, accountable for growth"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Talk to us",
+    "subtitle": "Book a free 30-minute consult",
+    "locations": "Hangzhou / Shanghai / Paris — happy to coffee chat in person",
+    "email": "contact@startpoint.ai",
+    "form": {
+      "name": "Your name",
+      "company": "Company / product",
+      "stage": "Product stage",
+      "stageOptions": ["Pre-MVP", "Demo ready", "Live, 0-100 users", "100-1k users", "1k+ users"],
+      "message": "What you'd like to discuss (optional)",
+      "submit": "Book the call",
+      "submitting": "Submitting…",
+      "success": "Got it. We'll reply to your email within 24 hours.",
+      "error": "Something went wrong. Email us directly at contact@startpoint.ai."
+    }
+  },
+  "footer": {
+    "rights": "© 2026 StartPoint Agency · 0→1 growth for AI Agents",
+    "language": "Language"
+  },
+  "faq": {
+    "title": "Frequently asked",
+    "items": [
+      { "q": "Do you only serve AI Agents?", "a": "Yes — AI Agent and AI SaaS only. No e-commerce, games, or consumer brands. Vertical focus lets us go deeper on the user decision journey and product perception." },
+      { "q": "How fast can you start?", "a": "Strategy Diagnosis: within 3 days. Lite and Complete engagements: fastest 7 days from signing to first execution." },
+      { "q": "How do you price?", "a": "Three tiers: Strategy Diagnosis at ¥15,000 one-off; Lite partnership ¥30-50k / month; Complete ¥80-120k / month + growth profit share. Scope tailored to stage." },
+      { "q": "How do you measure growth?", "a": "At kickoff we align on 3 North Star metrics (typically signups, paid conversion, ARR growth). Everything is reviewed against them. Under the Complete plan, our profit share is tied directly to those metrics." },
+      { "q": "Can I see more case studies?", "a": "The /cases page lists 3 public ones. More are available 1:1 under NDA — book a 30-min consult via the contact form or email." }
+    ]
+  }
+}

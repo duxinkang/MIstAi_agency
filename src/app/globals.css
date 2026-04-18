@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------
+   StartPoint Design Tokens
+   Source: StartPoint AI Agent Growth brand deck (2026)
+------------------------------------------------------------------ */
+:root {
+  /* Brand palette */
+  --sp-orange-50:  #FFF1EA;
+  --sp-orange-100: #FFD9C2;
+  --sp-orange-200: #FFB38A;
+  --sp-orange-300: #FF8854;
+  --sp-orange-400: #F5551D;   /* primary hero orange */
+  --sp-orange-500: #EA4510;   /* button / accent */
+  --sp-orange-600: #C2380B;   /* hover / deep */
+  --sp-orange-700: #8C2606;   /* text on light */
+
+  --sp-indigo-500: #5C4BD1;   /* gradient ball cool side */
+  --sp-indigo-600: #3E2FA6;
+
+  --sp-cream:      #F6EFE0;   /* reddit / ph section bg */
+  --sp-bone:       #EFEBE3;
+  --sp-paper:      #F0EFEB;   /* hero bg */
+  --sp-ink:        #0A0A0A;   /* headings */
+  --sp-ink-soft:   #1A1A1A;
+  --sp-muted:      #6B6B6B;
+
+  /* Semantic */
+  --background: var(--sp-paper);
+  --foreground: var(--sp-ink);
+
+  /* Typography */
+  --font-display: "HarmonyOS Sans SC", "PingFang SC", "Inter", -apple-system,
+                  "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+  --font-body: "Inter", "PingFang SC", "HarmonyOS Sans SC", -apple-system,
+               "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-orange-50:  var(--sp-orange-50);
+  --color-orange-100: var(--sp-orange-100);
+  --color-orange-200: var(--sp-orange-200);
+  --color-orange-300: var(--sp-orange-300);
+  --color-orange-400: var(--sp-orange-400);
+  --color-orange-500: var(--sp-orange-500);
+  --color-orange-600: var(--sp-orange-600);
+  --color-orange-700: var(--sp-orange-700);
+
+  --color-indigo-500: var(--sp-indigo-500);
+  --color-indigo-600: var(--sp-indigo-600);
+
+  --color-cream: var(--sp-cream);
+  --color-bone: var(--sp-bone);
+  --color-paper: var(--sp-paper);
+  --color-ink: var(--sp-ink);
+  --color-muted: var(--sp-muted);
+
+  --font-display: var(--font-display);
+  --font-sans: var(--font-body);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Utility: big hero title - tight tracking, heavy weight */
+.sp-display {
+  font-family: var(--font-display);
+  font-weight: 900;
+  letter-spacing: -0.025em;
+  line-height: 0.95;
+}
+
+/* Utility: the pill-shaped orange tag used throughout the deck */
+.sp-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  background: var(--sp-orange-500);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+/* Gradient ball used on hero + section dividers */
+.sp-ball {
+  background: radial-gradient(
+    circle at 30% 30%,
+    #FFD7BF 0%,
+    var(--sp-orange-400) 35%,
+    var(--sp-orange-600) 70%,
+    var(--sp-indigo-600) 100%
+  );
+  border-radius: 9999px;
+  filter: saturate(1.05);
+}
+
+.sp-ball-warm {
+  background: radial-gradient(
+    circle at 35% 30%,
+    #FFE3CC 0%,
+    #FFA66B 40%,
+    var(--sp-orange-500) 80%
+  );
+  border-radius: 9999px;
+}
+
+/* The grid-filled circle decoration top-right of hero */
+.sp-grid-circle {
+  background-image:
+    linear-gradient(to right, var(--sp-ink) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--sp-ink) 1px, transparent 1px);
+  background-size: 14px 14px;
+  border-radius: 9999px;
+  mask-image: radial-gradient(circle, #000 55%, transparent 65%);
+  -webkit-mask-image: radial-gradient(circle, #000 55%, transparent 65%);
+}
+
+/* The dot matrix */
+.sp-dot-matrix {
+  background-image: radial-gradient(var(--sp-ink) 1.5px, transparent 1.5px);
+  background-size: 14px 14px;
+}
+
+/* Section snap */
+.sp-snap { scroll-snap-type: y mandatory; }
+.sp-snap-child { scroll-snap-align: start; }
+
+/* Focus visible */
+:focus-visible {
+  outline: 2px solid var(--sp-orange-500);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
