@@ -45,13 +45,16 @@ export function Button({
   );
 
   if (href) {
-    if (external) {
+    // Hash-only links stay in-page — skip next-intl Link to avoid locale prefixing.
+    const isHash = typeof href === "string" && href.startsWith("#");
+    if (external || isHash) {
       return (
         <a
           href={href as string}
           className={cls}
-          target="_blank"
-          rel="noopener noreferrer"
+          {...(external
+            ? { target: "_blank", rel: "noopener noreferrer" }
+            : {})}
         >
           {children}
         </a>

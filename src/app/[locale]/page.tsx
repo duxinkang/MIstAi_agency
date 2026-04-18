@@ -2,6 +2,7 @@ import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import { Hero } from "@/components/sections/Hero";
 import { Problem } from "@/components/sections/Problem";
+import { Showcase } from "@/components/sections/Showcase";
 import { Partner } from "@/components/sections/Partner";
 import { ServicesOverview } from "@/components/sections/ServicesOverview";
 import { Engine } from "@/components/sections/Engine";
@@ -47,6 +48,7 @@ export default async function HomePage({
       <JsonLd data={[organizationSchema(locale), faqSchema(faqItems)]} />
       <Hero />
       <Problem />
+      <Showcase />
       <Partner />
       <ServicesOverview />
       <Engine />

@@ -18,7 +18,7 @@
     "titleEn": "StartPoint",
     "subtitle": "0→1 Growth, built exclusively for AI Agents",
     "cta": "Get a free 30-min consult",
-    "ctaSecondary": "See services"
+    "ctaSecondary": "Watch our work"
   },
   "problem": {
     "title": "AI Agents don't fail on tech. They fail on GTM.",
@@ -27,6 +27,15 @@
       { "n": "02", "text": "Features without a must-have scenario" },
       { "n": "03", "text": "Traffic without the right audience" }
     ]
+  },
+  "showcase": {
+    "eyebrow": "Featured work",
+    "title": "<em>8M+ views</em> across three launches — three AI products from 0 to 1.",
+    "subtitle": "Not videos you just 'watch' — growth assets that drive Product Hunt wins, fundraise rounds, and real traction in Western markets.",
+    "ctaEyebrow": "Want a launch video like these for your AI product?",
+    "ctaTitle": "Book a 30-min free strategy call — see if we're a fit.",
+    "ctaPrimary": "Book free diagnosis",
+    "ctaSecondary": "See the service"
   },
   "partner": {
     "kicker": "Who we are",

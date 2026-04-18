@@ -70,8 +70,8 @@ export function Hero() {
               <Button href="/contact" variant="primary" size="lg">
                 {t("cta")} →
               </Button>
-              <Button href="/services" variant="outline" size="lg">
-                {t("ctaSecondary")}
+              <Button href="#showcase" variant="outline" size="lg">
+                ▶ {t("ctaSecondary")}
               </Button>
             </div>
           </motion.div>

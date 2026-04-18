@@ -18,7 +18,7 @@
     "titleEn": "StartPoint",
     "subtitle": "只做 AI Agent 的 0→1 增长",
     "cta": "获得 30 分钟免费咨询",
-    "ctaSecondary": "查看服务"
+    "ctaSecondary": "看视频案例"
   },
   "problem": {
     "title": "AI Agent 的问题，不在技术，在 GTM",
@@ -27,6 +27,15 @@
       { "n": "02", "text": "有功能，但无「刚需场景」" },
       { "n": "03", "text": "有流量，但无精准人群" }
     ]
+  },
+  "showcase": {
+    "eyebrow": "客户战绩",
+    "title": "累计 <em>800 万+</em> 播放量，三支视频撬动三个 0→1",
+    "subtitle": "我们不是给你做一条「能看」的视频 —— 我们做的是能把你的产品从 0 推到融资、能在 Product Hunt 冲榜、能在海外市场打开局面的增长资产。",
+    "ctaEyebrow": "想为你的 AI 产品做一支这样的视频？",
+    "ctaTitle": "30 分钟免费策略诊断，看看能不能合作",
+    "ctaPrimary": "预约免费诊断",
+    "ctaSecondary": "了解 Launch Video 服务"
   },
   "partner": {
     "kicker": "我们是谁？",
