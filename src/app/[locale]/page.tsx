@@ -1,6 +1,7 @@
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import { Hero } from "@/components/sections/Hero";
+import { FeaturedKocOffer } from "@/components/sections/FeaturedKocOffer";
 import { ClientLogos } from "@/components/sections/ClientLogos";
 import { Problem } from "@/components/sections/Problem";
 import { Showcase } from "@/components/sections/Showcase";
@@ -69,6 +70,7 @@ export default async function HomePage({
         data={[organizationSchema(locale), faqSchema(faqItems), heroVideo]}
       />
       <Hero />
+      <FeaturedKocOffer />
       <ClientLogos />
       <Problem />
       <Showcase />

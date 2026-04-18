@@ -25,6 +25,11 @@ export function Nav() {
   }, []);
 
   const links = [
+    {
+      href: "/koc",
+      label: locale === "zh" ? "KOC 增长方案" : "KOC growth",
+      badge: locale === "zh" ? "首推" : "NEW",
+    },
     { href: "/services", label: t("services") },
     { href: "/cases", label: t("cases") },
     { href: "/about", label: t("about") },
@@ -56,9 +61,14 @@ export function Nav() {
               <Link
                 key={l.href}
                 href={l.href}
-                className="text-sm font-medium text-white/70 hover:text-[#00E676] transition-colors"
+                className="text-sm font-medium text-white/70 hover:text-[#00E676] transition-colors inline-flex items-center gap-1.5"
               >
                 {l.label}
+                {"badge" in l && l.badge && (
+                  <span className="text-[9px] font-bold tracking-wider px-1.5 py-0.5 rounded-sm bg-[#00E676] text-[#030810]">
+                    {l.badge}
+                  </span>
+                )}
               </Link>
             ))}
           </nav>
@@ -101,6 +111,11 @@ export function Nav() {
                 className="block py-2 text-base font-medium text-white/80 hover:text-[#00E676]"
               >
                 {l.label}
+                {"badge" in l && l.badge && (
+                  <span className="ml-2 text-[9px] font-bold tracking-wider px-1.5 py-0.5 rounded-sm bg-[#00E676] text-[#030810] align-middle">
+                    {l.badge}
+                  </span>
+                )}
               </Link>
             ))}
             <button
