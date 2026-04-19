@@ -7,6 +7,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { buildMetadata, breadcrumbSchema } from "@/lib/seo";
 import { CasesGrid } from "@/components/sections/CasesGrid";
 import { FeaturedCaseStudy } from "@/components/sections/FeaturedCaseStudy";
+import { EngagementScope } from "@/components/sections/EngagementScope";
 import { InternationalProjects } from "@/components/sections/InternationalProjects";
 
 export async function generateMetadata({
@@ -66,6 +67,9 @@ export default async function CasesPage({
 
       {/* Shorter AI-product case cards (Product Hunt / SEO / creators) */}
       <CasesGrid />
+
+      {/* Anonymized SOW example — what an engagement actually contains */}
+      <EngagementScope />
 
       {/* Pre-Mistai overseas 0→1 work across categories */}
       <InternationalProjects />
