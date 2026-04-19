@@ -13,7 +13,7 @@ import { Pill } from "@/components/ui/Pill";
  * results grid (4 big numbers) → founder quote.
  *
  * Client identity is intentionally anonymised — copy speaks about the product
- * shape ("B2B AI Agent · user interview platform") rather than brand.
+ * shape ("B2B AI Agent · enterprise insights automation") rather than brand.
  */
 type Workstream = { n: string; title: string; items: string[] };
 type Result = { n: string; label: string };

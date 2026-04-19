@@ -222,8 +222,8 @@
   },
   "featuredCase": {
     "eyebrow": "Featured case",
-    "category": "B2B AI Agent · User interview platform",
-    "title": "China's first AI-powered user interview platform: product, market, and funding — 0 to 1",
+    "category": "B2B AI Agent · Enterprise insights automation",
+    "title": "China's first AI-native enterprise insights platform: product, market, and funding — 0 to 1",
     "subtitle": "MIST Ai ran three parallel workstreams as this B2B AI Agent's core growth team — product validation, market launch, and investor narrative.",
     "workstreamsTitle": "Three parallel workstreams",
     "workstreams": [
@@ -241,7 +241,7 @@
         "n": "02",
         "title": "Product & commercial strategy",
         "items": [
-          "100+ user research calls / deep interviews",
+          "100+ frontline user research conversations",
           "3 core user personas defined",
           "50+ marketing and visual assets shipped",
           "Pricing model covering 95%+ paid scenarios"
