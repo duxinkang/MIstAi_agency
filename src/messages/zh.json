@@ -346,10 +346,50 @@
     "subtitle": "一支同时懂技术、懂增长、懂资本叙事的复合型团队",
     "description": "与国外数十位 AI SaaS 营销专家及顶级团队建立长期战略合作关系，共享经过市场验证的方法论与成功案例经验，为客户带来全球视野与本地执行力的双重优势",
     "members": [
+      {
+        "name": "Echo Jia",
+        "role": "CMO",
+        "avatar": "/team/echo.png",
+        "title": "CMO @ MIST Ai",
+        "text": "前全球头部科技企业 · 海外全球增长业务负责人 · 出海 GTM 操盘手",
+        "highlights": [
+          "一线派 · 20+ 国家深度走访，欧洲 / 北美 / 东南亚 / 南亚亲自跑通",
+          "只对结果负责 · 把流量变成 ARR 的全链路 Growth Engine"
+        ],
+        "stats": [
+          { "value": "7", "unit": "年", "label": "海外营销一线操盘经验" },
+          { "value": "10", "unit": "+", "label": "国际站点主导运营 · 千万级年流量" },
+          { "value": "百万", "unit": "级", "label": "SEM 年投流 · 精准闭环 2B 操盘" }
+        ],
+        "tagline": "人在海外 · 手在一线 · 结果闭环",
+        "contact": "WeChat: Echo00MKT",
+        "details": {
+          "sections": [
+            {
+              "heading": "一线派，不是飞一圈",
+              "body": "深度走访 20+ 国家，每国 2–3 次、单次 15 天以上。欧洲、北美、东南亚、南亚、中亚的渠道结构、市场打法与本地资源——都是自己跑出来的。"
+            },
+            {
+              "heading": "只对结果负责",
+              "body": "不停在曝光与粉丝，而是把动作一路打到 MQL → SQL 的线索与商单转化。",
+              "bullets": [
+                "直接管理 10+ 国际站点，年度总流量 20M",
+                "SEM 年投放预算 ≈ 100 万",
+                "亚太 12 国子站点同比 +32%，全球区域排名 #1",
+                "泛亚太社媒粉丝 125 万+（YoY +24.67%）",
+                "KOL 矩阵覆盖亚太 4 大市场，内容曝光 70 万+"
+              ]
+            },
+            {
+              "heading": "全球本土化承接网络",
+              "body": "欧洲（德国、意大利）、北美、亚太（澳洲、印尼、越南、新加坡、马来）——核心市场都有本地人直接落地，不做远程遥控。"
+            }
+          ],
+          "closing": "人在海外，手在一线，结果闭环。这是 Echo——也是 MIST Ai 给客户的底气。"
+        }
+      },
       { "name": "Summer Long", "role": "合伙人", "title": "MIST Ai 合伙人 · Cathoven CMO & Co-Founder", "text": "9+ 年海外市场实战 · 北美多家 B 轮公司 GTM 顾问 · AI Agent 0→1 海外增长系统搭建者", "avatar": "/team/summer.png" },
-      { "name": "Frank", "role": "技术", "title": "前网易算法专家", "text": "懂代码，翻译技术价值" },
-      { "name": "Elaine", "role": "流量", "title": "头部大厂市场专家", "text": "懂流量，洞察用户" },
-      { "name": "Simy", "role": "品牌", "title": "海外市场专家", "text": "5 亿美金操盘手" }
+      { "name": "Frank", "role": "技术", "title": "前网易算法专家", "text": "懂代码，翻译技术价值" }
     ]
   },
   "commitment": {
