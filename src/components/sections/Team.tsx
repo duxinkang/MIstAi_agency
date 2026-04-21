@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { Container, Section } from "@/components/ui/Container";
@@ -12,6 +13,7 @@ export function Team() {
     role: string;
     title: string;
     text: string;
+    avatar?: string;
   }[];
 
   return (
@@ -63,16 +65,44 @@ export function Team() {
                 transition={{ duration: 0.45, delay: i * 0.08 }}
                 className="grid grid-cols-1 gap-4 rounded-[32px] border border-white/10 bg-[#060D1C]/60 px-5 py-5 md:grid-cols-[220px_1fr] md:items-center md:px-6"
               >
-                <div className="inline-flex items-center justify-center rounded-full border-2 border-[#2979FF]/40 bg-[#2979FF]/15 px-5 py-4 text-center">
-                  <div>
-                    <div className="text-sm font-semibold tracking-[0.12em] text-white/70">
-                      {m.name}
+                {m.avatar ? (
+                  <div className="flex items-center gap-4 md:flex-col md:items-center md:gap-3 md:text-center">
+                    <div className="relative shrink-0">
+                      <div
+                        aria-hidden="true"
+                        className="absolute -inset-1 rounded-full border border-dashed border-[#2979FF]/40"
+                      />
+                      <div className="relative h-20 w-20 md:h-24 md:w-24 rounded-full overflow-hidden ring-2 ring-[#2979FF]/60 bg-[#2979FF]/15">
+                        <Image
+                          src={m.avatar}
+                          alt={m.name}
+                          fill
+                          sizes="96px"
+                          className="object-cover"
+                        />
+                      </div>
                     </div>
-                    <div className="sp-display mt-1 text-2xl text-[#E8F0FF]">
-                      {m.role}
+                    <div>
+                      <div className="text-sm font-semibold tracking-[0.12em] text-white/80">
+                        {m.name}
+                      </div>
+                      <div className="sp-display mt-0.5 text-xl text-[#E8F0FF]">
+                        {m.role}
+                      </div>
                     </div>
                   </div>
-                </div>
+                ) : (
+                  <div className="inline-flex items-center justify-center rounded-full border-2 border-[#2979FF]/40 bg-[#2979FF]/15 px-5 py-4 text-center">
+                    <div>
+                      <div className="text-sm font-semibold tracking-[0.12em] text-white/70">
+                        {m.name}
+                      </div>
+                      <div className="sp-display mt-1 text-2xl text-[#E8F0FF]">
+                        {m.role}
+                      </div>
+                    </div>
+                  </div>
+                )}
 
                 <div className="pr-1">
                   <div className="text-xl md:text-2xl font-semibold tracking-tight text-[#E8F0FF]">

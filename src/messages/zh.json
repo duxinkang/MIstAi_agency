@@ -346,6 +346,7 @@
     "subtitle": "一支同时懂技术、懂增长、懂资本叙事的复合型团队",
     "description": "与国外数十位 AI SaaS 营销专家及顶级团队建立长期战略合作关系，共享经过市场验证的方法论与成功案例经验，为客户带来全球视野与本地执行力的双重优势",
     "members": [
+      { "name": "Summer Long", "role": "合伙人", "title": "MIST Ai 合伙人 · Cathoven CMO & Co-Founder", "text": "9+ 年海外市场实战 · 北美多家 B 轮公司 GTM 顾问 · AI Agent 0→1 海外增长系统搭建者", "avatar": "/team/summer.png" },
       { "name": "Frank", "role": "技术", "title": "前网易算法专家", "text": "懂代码，翻译技术价值" },
       { "name": "Elaine", "role": "流量", "title": "头部大厂市场专家", "text": "懂流量，洞察用户" },
       { "name": "Simy", "role": "品牌", "title": "海外市场专家", "text": "5 亿美金操盘手" }

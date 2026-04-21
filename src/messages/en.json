@@ -346,6 +346,7 @@
     "subtitle": "A hybrid team fluent in tech, growth, and investor narrative",
     "description": "Long-term partnerships with dozens of international AI SaaS marketers and top agencies — shared, validated playbooks that give you global vision with local execution.",
     "members": [
+      { "name": "Summer Long", "role": "Partner", "title": "MIST Ai Partner · CMO & Co-Founder, Cathoven", "text": "9+ yrs overseas GTM · advisor to multiple North-American Series-B companies · builds 0→1 overseas growth systems for AI Agents.", "avatar": "/team/summer.png" },
       { "name": "Frank", "role": "Tech", "title": "ex-NetEase ML Lead", "text": "Reads code. Translates tech into value." },
       { "name": "Elaine", "role": "Growth", "title": "Top-tier Big Tech marketing", "text": "Knows traffic. Reads users." },
       { "name": "Simy", "role": "Brand", "title": "Global market lead", "text": "US$500M budget under her belt." }
